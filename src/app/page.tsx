@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Section from "../components/Section";
 import Image from "next/image";
 
-
 const Home = () => {
   return (
     <div>
@@ -36,9 +35,16 @@ const Home = () => {
       <Section id="contact" title="Contact">
         <h1>Contact</h1>
         <h2>Lina Isabel LONDONO HIDALGO</h2>
-        <p><span>Téléphone: </span>+33 (0)7 51 62 36 18</p>
-        <p><span>E-mail: </span>XXXXXXX@gmail.com</p>
-        <p>Au plaisir d&apos;échanger sur la manière dont je pourrais contribuer à la réussite de vos ambitions!</p>
+        <p>
+          <span>Téléphone: </span>+33 (0)7 51 62 36 18
+        </p>
+        <p>
+          <span>E-mail: </span>XXXXXXX@gmail.com
+        </p>
+        <p>
+          Au plaisir d&apos;échanger sur la manière dont je pourrais contribuer
+          à la réussite de vos ambitions!
+        </p>
         <button>Regarder mon CV</button>
       </Section>
     </div>
