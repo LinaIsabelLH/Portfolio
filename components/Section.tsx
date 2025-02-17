@@ -1,9 +1,28 @@
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
-const Section = () =>{
+interface SectionProps{
+    id: string;
+    title: string;
+    backgroundImage: string;
+    children?: React.ReactNode;
+}
+
+const Section : React.FC <SectionProps> = ({id, title, backgroundImage, children}) =>{
     return (
-<div></div>
-)
+        <section
+        id={id}
+        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat "
+        style={{backgroundImage: `url('${backgroundImage}')`}}
+       >
+        {/* Overlay semi-transparent */}
+        <div className="absolute inset-0 bg-slate-800 bg-opacity-50"></div>
+        {/* Titre de la section */}
+        <SectionTitle title={title}/>
+        {/* Contenu de la section */}
+        {children}
+      </section>
+    )
 }
 
 export default Section;

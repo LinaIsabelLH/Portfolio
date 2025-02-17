@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
+import Section from "@/components/Section";
 // import Section from "@/components/Section";
 
 export default function Home() {
@@ -24,15 +25,12 @@ export default function Home() {
       >
         <h1 className="text-4xl font-bold text-green-500">Mes Compétences</h1>
       </section>
-      <section
+      <Section
         id="portfolio"
-        className="relative h-screen flex items-center justify-center bg-[url('/photo1-accueil.png')] bg-cover bg-center bg-no-repeat "
-      >
-        <div className="absolute inset-0 bg-slate-800 bg-opacity-50"></div>
-        <h1 className="relative z-10 text-4xl font-bold text-orange-400 bg-slate-800 ">
-          Mes Projets
-        </h1>
-      </section>
+        title="Mes Projets"
+        backgroundImage="/photo1-accueil.png"
+         >
+      </Section>
       <section
         id="contact"
         className="h-screen flex items-center justify-center bg-red-50"

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className=" bg-slate-800 text-white p-4 fixed w-full top-0 z-50">
+    <header className="fixed flex-auto bg-slate-800 text-white p-4 w-full top-0 z-50">
       <nav className="container mx-auto flex justify-between items-center h-4">
         <h1>LILH</h1>
         {/* <Image alt="imageLogo" src="" className=" font-bold" /> */}
@@ -13,7 +13,7 @@ const Header = () => {
             to="accueil"
             smooth={true}
             duration={500}
-            className="hover:underline font-bold cursor-pointer text-xl"
+            className="hover:underline font-bold font-sans cursor-pointer text-xl"
           >
             {/* Mettre un span pour le titre de chaque lien si on peut le separer
             de l icone comme ci-dessous */}
@@ -23,7 +23,7 @@ const Header = () => {
             to="profil"
             smooth={true}
             duration={500}
-            className="hover:underline font-bold cursor-pointer text-xl"
+            className="hover:underline font-bold font-sans cursor-pointer text-xl"
           >
             Profil
           </Link>
@@ -31,7 +31,7 @@ const Header = () => {
             to="competences"
             smooth={true}
             duration={500}
-            className="hover:underline font-bold cursor-pointer text-xl"
+            className="hover:underline font-bold font-sans cursor-pointer text-xl"
           >
             Compétences
           </Link>
@@ -39,7 +39,7 @@ const Header = () => {
             to="portfolio"
             smooth={true}
             duration={500}
-            className="hover:underline font-bold cursor-pointer text-xl"
+            className="hover:underline font-bold font-sans cursor-pointer text-xl"
           >
             Portfolio
           </Link>
@@ -47,12 +47,12 @@ const Header = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:underline font-bold cursor-pointer text-xl"
+            className="hover:underline font-bold font-sans cursor-pointer text-xl"
           >
             Contact
           </Link>
           <div className="">
-            <button className="flex font-bold cursor-pointer text-lg px-2 pt-1 rounded-lg bg-yellow-400">
+            <button className="flex font-bold font-sans cursor-pointer text-lg px-2 pt-1 rounded-lg bg-yellow-400">
               <span className="mr-0.5 text-black">CV</span>
               <div>
               <Image
