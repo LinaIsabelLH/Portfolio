@@ -4,17 +4,20 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="bg-blue-500 text-white p-4 fixed w-full top-0 z-50 ">
-      <nav className="container mx-auto flex justify-between items-center">
-        <Image alt="imageLogo" src="" className=" font-bold" />
-        <div className="space-x-16 flex">
+    <header className=" bg-slate-800 text-white p-4 fixed w-full top-0 z-50">
+      <nav className="container mx-auto flex justify-between items-center h-4">
+        <h1>LILH</h1>
+        {/* <Image alt="imageLogo" src="" className=" font-bold" /> */}
+        <div className="space-x-16 flex items-center">
           <Link
             to="accueil"
             smooth={true}
             duration={500}
             className="hover:underline font-bold cursor-pointer text-xl"
           >
-            Accueil
+            {/* Mettre un span pour le titre de chaque lien si on peut le separer
+            de l icone comme ci-dessous */}
+            <span>Accueil</span>
           </Link>
           <Link
             to="profil"
@@ -48,15 +51,17 @@ const Header = () => {
           >
             Contact
           </Link>
-          <div >
-            <button className="flex font-bold cursor-pointer text-xl">
-              CV 
+          <div className="">
+            <button className="flex font-bold cursor-pointer text-lg px-2 pt-1 rounded-lg bg-yellow-400">
+              <span className="mr-0.5 text-black">CV</span>
+              <div>
               <Image
                 alt="telechargement CV"
                 src="/telecharger.png"
-                width={30}
-                height={20}
+                height={15}
+                width={20}
               />
+              </div>
             </button>
           </div>
         </div>
