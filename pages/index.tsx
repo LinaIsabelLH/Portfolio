@@ -6,37 +6,49 @@ import Section from "@/components/Section";
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Header />
-      <section
-        id="accueil"
-        className="h-screen flex items-center justify-center "
-      >
-        <h1 className="text-4xl font-bold text-gray-900">Accueil</h1>
-      </section>
-      <section
+      <Header/>
+      <Section id="accueil" title="" backgroundImage="/accueil.png">
+        <h2>Bonjour et bienvenu(e)!</h2>
+        <p>
+          Je suis Lina Isabel Londono Hidalgo, Développeuse Fullstack
+          d&apos;Applications Web et Mobile!
+        </p>
+      </Section>
+      <Section
         id="profil"
-        className="h-screen flex items-center justify-center bg-green-50"
+        title="Qui suis-je?"
+        backgroundImage="/description.png"
       >
-        <p>Description de mon profil et photo</p>
-      </section>
-      <section
+        <div className="mt-8">
+          <p>Description1</p>
+          <p>Description2</p>
+          <p>Description3</p>
+        </div>
+        <div>
+          <button className="font-bold">En savoir plus sur moi...</button>
+        </div>
+      </Section>
+      <Section
         id="competences"
-        className="h-screen flex items-center justify-center bg-green-50"
-      >
-        <h1 className="text-4xl font-bold text-green-500">Mes Compétences</h1>
-      </section>
+        title="Mes Compétences"
+        backgroundImage="/photoCompet.png"
+      ></Section>
       <Section
         id="portfolio"
         title="Mes Projets"
-        backgroundImage="/photo1-accueil.png"
-         >
+        backgroundImage="/photo-projets.png"
+      ></Section>
+      <Section id="contact" title="Contact" backgroundImage="/contact.png">
+        <div>
+          <h2>Lina Isabel Londono Hidalgo</h2>
+          <p>
+            <span>Téléphone: </span> +33 (0)7 51 62 36 18
+          </p>
+          <p>
+            <span>E-mail: </span> XXX@gmail.com
+          </p>
+        </div>
       </Section>
-      <section
-        id="contact"
-        className="h-screen flex items-center justify-center bg-red-50"
-      >
-        <h1 className="text-4xl font-bold text-red-500">Contact</h1>
-      </section>
     </div>
   );
 }
