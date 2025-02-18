@@ -6,14 +6,22 @@ import Section from "@/components/Section";
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Header/>
-      <Section id="accueil" title="" backgroundImage="/img/accueil.png">
-        <h2>Bonjour et bienvenu(e)!</h2>
-        <p>
-          Je suis Lina Isabel Londono Hidalgo, Développeuse Fullstack
-          d&apos;Applications Web et Mobile!
-        </p>
-      </Section>
+      <Header />
+      <section
+        id="accueil"
+        className="relative h-screen flex justify-center items-center text-center bg-[url('/img/accueil.png')] bg-cover bg-center bg-no-repeat pt-24"
+      >
+        {/* Overlay semi-transparent */}
+        <div className="absolute inset-0 bg-slate-800 bg-opacity-40"></div>
+        <div className="z-10 font-serif">
+          <h2 className="font-extrabold text-4xl mt-16">Bonjour et Bienvenu(e)!</h2>
+          <p className="font-medium text-2xl mt-11">
+            Je suis{" "}
+            <span className="font-bold">Lina Isabel Londono Hidalgo</span>
+          </p>
+          <p className="font-medium text-2xl ">Développeuse Fullstack</p>
+        </div>
+      </section>
       <Section
         id="profil"
         title="Qui suis-je?"
