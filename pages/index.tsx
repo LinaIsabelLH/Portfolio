@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
       <Header/>
-      <Section id="accueil" title="" backgroundImage="/accueil.png">
+      <Section id="accueil" title="" backgroundImage="/img/accueil.png">
         <h2>Bonjour et bienvenu(e)!</h2>
         <p>
           Je suis Lina Isabel Londono Hidalgo, Développeuse Fullstack
@@ -17,7 +17,7 @@ export default function Home() {
       <Section
         id="profil"
         title="Qui suis-je?"
-        backgroundImage="/description.png"
+        backgroundImage="/img/description.png"
       >
         <div className="mt-8">
           <p>Description1</p>
@@ -31,14 +31,14 @@ export default function Home() {
       <Section
         id="competences"
         title="Mes Compétences"
-        backgroundImage="/photoCompet.png"
+        backgroundImage="/img/photoCompet.png"
       ></Section>
       <Section
         id="portfolio"
         title="Mes Projets"
-        backgroundImage="/photo-projets.png"
+        backgroundImage="/img/photo-projets.png"
       ></Section>
-      <Section id="contact" title="Contact" backgroundImage="/contact.png">
+      <Section id="contact" title="Contact" backgroundImage="/img/contact.png">
         <div>
           <h2>Lina Isabel Londono Hidalgo</h2>
           <p>
