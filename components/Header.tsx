@@ -57,7 +57,7 @@ const Header = () => {
               <div>
               <Image
                 alt="telechargement CV"
-                src="/telecharger.png"
+                src="/img/telecharger.png"
                 height={15}
                 width={20}
               />
