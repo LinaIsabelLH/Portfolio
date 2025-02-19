@@ -4,7 +4,7 @@ import CVDownloadBtn from "./CVDownloadBtn";
 
 const Header = () => {
   return (
-    <header className="fixed flex-auto bg-slate-800 text-white p-4 w-full top-0 z-50 border-b border-orange-400">
+    <header className="fixed flex-auto bg-slate-800 text-zinc-100 p-4 w-full top-0 z-50 border-b border-orange-400">
       <nav className="container mx-auto flex justify-between items-center h-4 font-body font-medium text-xl ">
         <h1>LILH</h1>
         {/* <Image alt="imageLogo" src="" className=" font-bold" /> */}

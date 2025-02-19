@@ -1,27 +1,21 @@
 import React from "react";
 import Header from "@/components/Header";
 import Section from "@/components/Section";
-import AccueilSection from "@/components/AccueilSection";
+import HomeSection from "@/components/HomeSection";
+import ProfileSection from "@/components/ProfileSection";
 // import Section from "@/components/Section";
 
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
       <Header />
-      <AccueilSection/>
+      <HomeSection/>
       <Section
         id="profil"
         title="Qui suis-je?"
         backgroundImage="/img/description.png"
       >
-        <div className="mt-8">
-          <p>Description1</p>
-          <p>Description2</p>
-          <p>Description3</p>
-        </div>
-        <div>
-          <button className="font-bold">En savoir plus sur moi...</button>
-        </div>
+        <ProfileSection/>
       </Section>
       <Section
         id="competences"
