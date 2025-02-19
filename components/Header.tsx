@@ -5,7 +5,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <header className="fixed flex-auto bg-slate-800 text-white p-4 w-full top-0 z-50">
-      <nav className="container mx-auto flex justify-between items-center h-4 font-serif font-medium text-xl ">
+      <nav className="container mx-auto flex justify-between items-center h-4 font-body font-medium text-xl ">
         <h1>LILH</h1>
         {/* <Image alt="imageLogo" src="" className=" font-bold" /> */}
         <div className="space-x-16 flex items-center">
