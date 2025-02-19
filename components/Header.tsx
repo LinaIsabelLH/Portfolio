@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Image from "next/image";
+import CVDownloadBtn from "./CVDownloadBtn";
 
 const Header = () => {
   return (
@@ -26,19 +26,7 @@ const Header = () => {
           <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
-          <div>
-            <button className="flex font-semibold hover:bg-orange-400 text-lg px-2 pt-1 rounded-lg bg-orange-300">
-              <span className="mr-0.5 text-black">CV</span>
-              <div>
-                <Image
-                  alt="telechargement CV"
-                  src="/img/telecharger.png"
-                  height={15}
-                  width={20}
-                />
-              </div>
-            </button>
-          </div>
+          <CVDownloadBtn />
         </div>
       </nav>
     </header>
