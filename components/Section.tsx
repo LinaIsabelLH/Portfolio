@@ -16,7 +16,7 @@ const Section : React.FC <SectionProps> = ({id, title, backgroundImage, children
         style={{backgroundImage: `url('${backgroundImage}')`}}
        >
         {/* Overlay semi-transparent */}
-        <div className="absolute inset-0 bg-slate-800 bg-opacity-40"></div>
+        <div className="absolute inset-0 bg-slate-800/40"></div>
         {/* Titre de la section */}
         <SectionTitle title={title}/>
         {/* Contenu de la section */}

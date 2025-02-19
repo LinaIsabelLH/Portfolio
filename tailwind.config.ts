@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-/** @type {import('tailwindcss').Config} */
 
 export default {
   content: [
@@ -9,13 +8,12 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-       
-      },
-      fontFamily:{
-        body:['Commissioner']
+      colors: {},
+      fontFamily: {
+        body: ["Commissioner"],
       },
     },
   },
   plugins: [],
 } satisfies Config;
+
