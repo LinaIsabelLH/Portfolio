@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import GithubLogo from "./svg/GithubLogo";
+import LinkedinLogo from "./svg/LinkedinLogo";
 
 const ProfileSection = () => {
   return (
@@ -34,6 +36,26 @@ const ProfileSection = () => {
             , j’aime transformer les idées en solutions concrètes et
             performantes, en explorant sans cesse de nouvelles technologies.
           </p>
+          <div className="flex justify-center">
+          <a
+            href="https://www.linkedin.com/in/lina-isabel-londono-hidalgo/"
+            target="_blank"
+            aria-label="Linkedin link"
+            rel="noreferrer"
+            className="my-4"
+          >
+            <LinkedinLogo/>
+          </a>
+          <a
+            href="https://github.com/LinaIsabelLH"
+            target="_blank"
+            aria-label="Github link"
+            rel="noreferrer"
+            className="my-4 ml-10"
+          >
+            <GithubLogo/>
+          </a>
+          </div>
         </div>
         <div className="ml-24 flex justify-center items-center ">
           <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400">
@@ -49,8 +71,8 @@ const ProfileSection = () => {
         </div>
       </div>
 
-      <div>
-        <button className="font-bold">En savoir plus sur moi...</button>
+      <div className="z-10">
+        <button className="font-bold text-zinc-100 ">En savoir plus👇</button>
       </div>
     </>
   );
