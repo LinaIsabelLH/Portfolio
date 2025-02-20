@@ -13,7 +13,7 @@ export default function Home() {
       <Section
         id="profil"
         title="Qui suis-je?"
-        backgroundImage="/img/description.png"
+        backgroundImage="/img/description.jpg"
       >
         <ProfileSection/>
       </Section>
