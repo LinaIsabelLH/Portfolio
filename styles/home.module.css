@@ -1,0 +1,29 @@
+.homeDescriptionContainer {
+  background-repeat: no-repeat;
+  background-size: 0 0, 0 0, 0% 0;
+  animation: 2.5s drawBorderFromLeft 0.5s forwards;
+  border-radius: 40px;
+}
+
+/* Animations CSS */
+
+@keyframes drawBorderFromLeft {
+  0% {
+    background-size: 1px 0, 0 0, 100% 100%;
+    background-position: center left, top left, center right;
+  }
+  20% {
+    background-size: 1px 100%, 0 100%, 100% 100%;
+    background-position: left left, top left, center right;
+  }
+  66% {
+    background-size: 1px 100%, 98% 100%, 100% 100%;
+    background-position: center left, top left, center right;
+    background-color: #1e293b;
+  }
+  100% {
+    background-size: 1px 100%, 98% 100%, 100% 1px;
+    background-position: center left, top left, center right;
+    background-color: #fb923c;
+  }
+}
