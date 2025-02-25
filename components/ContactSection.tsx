@@ -3,7 +3,23 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../styles/home.module.css";
 
+
 const ContactSection = () => {
+  const email = "londonohidalgo@gmail.com";
+  const handleCopyEmail = () => {
+    
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        alert("E-mail copié dans le presse-papiers!");
+      })
+      .catch((err) => {
+        console.error("Erreur lors de la copie de l'e-mail: ", err);
+      });
+    
+
+  };
+
   return (
     <div className=" z-10 relative flex w-full justify-center items-center mt-20">
       {/* Conteneur du texte avec la bordure animée */}
@@ -18,15 +34,13 @@ const ContactSection = () => {
           <h3 className="font-bold text-2xl">Lina Isabel Londono Hidalgo</h3>
           <p className="pt-2 pb-2 text-xl">
             <span className="font-semibold">Téléphone: </span>
-            <a href="tel:+33751623618">+33 (0)7 51 62 36 18</a>
+            <a href="tel:+33751623618" className="hover:underline">+33 (0)7 51 62 36 18</a>
           </p>
 
           <div className="flex text-xl mb-8">
             <p className="text-xl mr-1">
               <span className="font-semibold">E-mail: </span>{" "}
-              <a href="mailto:londonohidalgo@gmail.com">
-                londonohidalgo@gmail.com
-              </a>
+              <a href="mailto:londonohidalgo@gmail.com" className="hover:underline">{email}</a>
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +48,8 @@ const ContactSection = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6 mt-1"
+              className="size-6 mt-1 cursor-pointer"
+              onClick={handleCopyEmail}
             >
               <path
                 strokeLinecap="round"
