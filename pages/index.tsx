@@ -28,7 +28,7 @@ export default function Home() {
         title="Mes Projets"
         backgroundImage="/img/photo-projets.png"
       ></Section>
-      <Section id="contact" title="Contact" backgroundImage="/img/contact.png">
+      <Section id="contact" title="Contact" backgroundImage="/img/contactPic-copie.png">
         <ContactSection/>
       </Section>
     </div>
