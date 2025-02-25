@@ -21,7 +21,7 @@ const ContactSection = () => {
     <div className=" z-10 relative flex w-full justify-center items-center mt-20">
       {/* Conteneur du texte avec la bordure animée */}
       <div
-        className={`relative max-w-xl  p-1 ${styles.homeDescriptionContainer}`}
+        className={`relative max-w-lg  p-1 ${styles.homeDescriptionContainer}`}
       >
         {/* Contenu du texte */}
         <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
