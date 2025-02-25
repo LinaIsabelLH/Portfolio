@@ -1,16 +1,12 @@
 import React from "react";
 import NodeLogo from "../svg/NodeLogo";
+import { type CompetenceType } from "@/types/types";
 
-type CompetenceType = {
-  name: string; // Nom de la compétence
-  img?: string; // Chemin de l'image (optionnel)
-  svg?: React.ReactNode; // Composant SVG (optionnel)
-};
 
 export const frontCompetences: CompetenceType[] = [
   {
     name: "React.js",
-    img: ":/img/competence/reactLogo.png",
+    img: "/img/competence/reactLogo.png",
   },
   {
     name: "Next.js",
