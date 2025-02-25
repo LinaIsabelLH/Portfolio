@@ -3,11 +3,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../styles/home.module.css";
 
-
 const ContactSection = () => {
   const email = "londonohidalgo@gmail.com";
+  
   const handleCopyEmail = () => {
-    
     navigator.clipboard
       .writeText(email)
       .then(() => {
@@ -16,8 +15,6 @@ const ContactSection = () => {
       .catch((err) => {
         console.error("Erreur lors de la copie de l'e-mail: ", err);
       });
-    
-
   };
 
   return (
@@ -34,13 +31,20 @@ const ContactSection = () => {
           <h3 className="font-bold text-2xl">Lina Isabel Londono Hidalgo</h3>
           <p className="pt-2 pb-2 text-xl">
             <span className="font-semibold">Téléphone: </span>
-            <a href="tel:+33751623618" className="hover:underline">+33 (0)7 51 62 36 18</a>
+            <a href="tel:+33751623618" className="hover:underline">
+              +33 (0)7 51 62 36 18
+            </a>
           </p>
 
           <div className="flex text-xl mb-8">
             <p className="text-xl mr-1">
               <span className="font-semibold">E-mail: </span>{" "}
-              <a href="mailto:londonohidalgo@gmail.com" className="hover:underline">{email}</a>
+              <a
+                href="mailto:londonohidalgo@gmail.com"
+                className="hover:underline"
+              >
+                {email}
+              </a>
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
