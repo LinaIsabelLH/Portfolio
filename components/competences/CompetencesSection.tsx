@@ -1,17 +1,23 @@
 import React from "react";
-import { frontCompetences, backCompetences, technoCompetences, toolsCompetences } from "../data/CompetencesData";
-import CompetencesStack from './CompetencesStack';
-import styles from "../../styles/competences.module.css"
+import {
+  frontCompetences,
+  backCompetences,
+  technoCompetences,
+  toolsCompetences,
+} from "../data/CompetencesData";
+import CompetencesStack from "./CompetencesStack";
+import styles from "../../styles/competences.module.css";
 
-const Competences = () => {
+const CompetencesSection = () => {
   return (
-      <div className={styles.competencesContainer}>
+    <div className="relative z-10 w-full pt-5 mt-20">
+      <div className="flex flex-row justify-evenly items-center w-full">
         <div
-          className={styles.apparitionContainer}
+          className="m-auto flex flex-col"
           data-aos="fade-up"
           data-aos-offset="100"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
           <div className={styles.individualCompetenceBlock}>
@@ -21,64 +27,26 @@ const Competences = () => {
         </div>
 
         <div
-          className={styles.apparitionContainer}
+          className="m-auto flex flex-col"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset="150"
-          data-aos-duration="500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div
-            className={styles.sectionsLineConnection}
-            data-aos="lineGrowing"
-            data-aos-offset="150"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          />
           <div className={styles.individualCompetenceBlock}>
             <h3 className={styles.ensembleCompetencesTitle}>BackEnd</h3>
             <CompetencesStack competences={backCompetences} />
           </div>
         </div>
-
         <div
-          className={styles.apparitionContainer}
+          className="m-auto flex flex-col"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset="150"
-          data-aos-duration="500"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div
-            className={styles.sectionsLineConnection}
-            data-aos="lineGrowing"
-            data-aos-offset="150"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          />
-          <div className={styles.individualCompetenceBlock}>
-            <h3 className={styles.ensembleCompetencesTitle}>
-              Les technos que j&apos;ai travaillé
-            </h3>
-            <CompetencesStack competences={technoCompetences} />
-          </div>
-        </div>
-
-        <div
-          className={styles.apparitionContainer}
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-offset="150"
-          data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-        >
-          <div
-            className={styles.sectionsLineConnection}
-            data-aos="lineGrowing"
-            data-aos-offset="150"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          />
           <div className={styles.individualCompetenceBlock}>
             <h3 className={styles.ensembleCompetencesTitle}>
               Les outils que j&apos;utilise
@@ -87,7 +55,25 @@ const Competences = () => {
           </div>
         </div>
       </div>
+      <div className="flex flex-col">
+        <div
+          className="m-auto flex flex-col"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-offset="150"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div className={styles.individualCompetenceBlock}>
+            <h3 className={styles.ensembleCompetencesTitle}>
+              Les technos que j&apos;ai travaillé
+            </h3>
+            <CompetencesStack competences={technoCompetences} />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Competences;
+export default CompetencesSection;

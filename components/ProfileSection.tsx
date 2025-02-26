@@ -12,7 +12,7 @@ const ProfileSection = () => {
         {/* Conteneur du texte avec la bordure animée */}
         <div className={`relative mt-20 max-w-xl my-4 p-1 ${styles.homeDescriptionContainer}`}>
           {/* Contenu du texte */}
-          <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl ">
+          <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
             <p>
               Je suis une{" "}
               <span className="font-bold text-orange-400">

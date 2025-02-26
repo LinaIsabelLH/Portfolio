@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 import HomeSection from "@/components/HomeSection";
 import ProfileSection from "@/components/ProfileSection";
 import ContactSection from "@/components/ContactSection";
-import Competences from "@/components/competences/CompetencesSection"
+import CompetencesSection from "@/components/competences/CompetencesSection"
 
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
         title="Mes Compétences"
         backgroundImage="/img/photoCompet.png"
       >
-        <Competences/>
+        <CompetencesSection/>
       </Section>
       <Section
         id="portfolio"

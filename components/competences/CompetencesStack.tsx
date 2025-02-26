@@ -1,6 +1,7 @@
 import React, { useMemo, JSX }  from 'react';
 import Image from 'next/image';
 import { type CompetenceType } from "@/types/types";
+import styles from '../../styles/competences.module.css';
 
 
 type Props = {
@@ -15,17 +16,18 @@ const CompetencesStack = (props: Props): JSX.Element => {
       if (competence.svg) {
         return (
           <div key={competence.name}>
-            <div role="img" aria-label={competence.name}>
+            <div role="img" aria-label={competence.name} className=
+            {styles.competenceLogoContainer}>
               {competence.svg}
             </div>
-            <h4>{competence.name}</h4>
+            <h4 className='text-zinc-100 font-semibold'>{competence.name}</h4>
           </div>
         );
       }
 
       return (
         <div key={competence.name}>
-          <div>
+          <div className={styles.competenceLogoContainer}>
             <Image
               width={100}
               height={100}
@@ -34,7 +36,7 @@ const CompetencesStack = (props: Props): JSX.Element => {
               title={competence.name}
             />
           </div>
-          <h4>{competence.name}</h4>
+          <h4 className='text-zinc-100 font-semibold'>{competence.name}</h4>
         </div>
       );
     });

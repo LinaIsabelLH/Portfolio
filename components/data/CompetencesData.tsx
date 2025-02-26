@@ -13,7 +13,7 @@ export const frontCompetences: CompetenceType[] = [
     img: "/img/competences/nextLogo.png",
   },
   {
-    name: "Tailwindcss",
+    name: "Tailwind css",
     img: "/img/competences/tailwindcssLogo.png",
   },
 ];
@@ -31,7 +31,7 @@ export const backCompetences: CompetenceType[] = [
 
 export const technoCompetences: CompetenceType[] = [
   {
-    name: "Javascript",
+    name: "JavaScript",
     img: "/img/competences/jsLogo.png",
   },
   {
