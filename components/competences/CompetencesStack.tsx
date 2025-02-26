@@ -1,6 +1,5 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, JSX }  from 'react';
 import Image from 'next/image';
-import styles from '../../styles/competences.module.css';
 import { type CompetenceType } from "@/types/types";
 
 
@@ -8,7 +7,7 @@ type Props = {
   competences: CompetenceType[];
 };
 
-const CompetencesStack = (props: Props): React.ReactNode => {
+const CompetencesStack = (props: Props): JSX.Element => {
   const { competences } = props;
 
   const competencesList = useMemo(() => {
@@ -16,27 +15,26 @@ const CompetencesStack = (props: Props): React.ReactNode => {
       if (competence.svg) {
         return (
           <div key={competence.name}>
-            <div className=
-            {`${styles.competenceLogoContainer}`}>
+            <div role="img" aria-label={competence.name}>
               {competence.svg}
             </div>
-            <h4 className={`${styles.competenceTitle}`}>{competence.name}</h4>
+            <h4>{competence.name}</h4>
           </div>
         );
       }
 
       return (
         <div key={competence.name}>
-          <div className={`${styles.competenceLogoContainer}`}>
+          <div>
             <Image
               width={100}
               height={100}
               src={competence.img ?? ''}
-              alt={competence.name}
+              alt={`Logo de ${competence.name}`}
               title={competence.name}
             />
           </div>
-          <h4 className={`${styles.competenceTitle}`}>{competence.name}</h4>
+          <h4>{competence.name}</h4>
         </div>
       );
     });

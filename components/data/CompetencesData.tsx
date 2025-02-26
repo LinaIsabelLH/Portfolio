@@ -6,15 +6,15 @@ import { type CompetenceType } from "@/types/types";
 export const frontCompetences: CompetenceType[] = [
   {
     name: "React.js",
-    img: "/img/competence/reactLogo.png",
+    img: "/img/competences/reactLogo.png",
   },
   {
     name: "Next.js",
-    img: "/img/competence/nextLogo.png",
+    img: "/img/competences/nextLogo.png",
   },
   {
     name: "Tailwindcss",
-    img: "/img/competence/tailwindcssLogo.png",
+    img: "/img/competences/tailwindcssLogo.png",
   },
 ];
 
@@ -25,48 +25,48 @@ export const backCompetences: CompetenceType[] = [
   },
   {
     name: "MongoDB",
-    img: "/img/competence/mongodbLogo.png",
+    img: "/img/competences/mongodbLogo.png",
   },
 ];
 
 export const technoCompetences: CompetenceType[] = [
   {
     name: "Javascript",
-    img: "/img/competence/jsLogo.png",
+    img: "/img/competences/jsLogo.png",
   },
   {
     name: "Redux",
-    img: "/img/competence/reduxLogo.png",
+    img: "/img/competences/reduxLogo.png",
   },
   {
     name: "SEO",
-    img: "/img/competence/seoLogo.png",
+    img: "/img/competences/seoLogo.png",
   },
   {
     name: "TypeScript",
-    img: "/img/competence/typescriptLogo.png",
+    img: "/img/competences/typescriptLogo.png",
   },
   {
     name: "Eslint",
-    img: "/img/competence/eslintLogo.png",
+    img: "/img/competences/eslintLogo.png",
   },
   {
     name: "Jest",
-    img: "/img/competence/jestLogo.png",
+    img: "/img/competences/jestLogo.png",
   },
 ];
 
 export const toolsCompetences: CompetenceType[] = [
   {
     name: "Git",
-    img: "/img/competence/gitLogo.png",
+    img: "/img/competences/gitLogo.png",
   },
   {
     name: "Netlify",
-    img: "/img/competence/netlifyLogo.png",
+    img: "/img/competences/netlifyLogo.png",
   },
   {
     name: "Figma",
-    img: "/img/competence/figmaLogo.png",
+    img: "/img/competences/figmaLogo.png",
   },
 ];

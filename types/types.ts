@@ -1,7 +1,9 @@
+import { JSX } from "react";
+
 export type CompetenceType = {
     img?: string;
     name: string;
-    svg?: React.ReactNode; 
+    svg?: JSX.Element;
   };
   
   export type ArrayElementType<T> = T extends (infer U)[] ? U : never;

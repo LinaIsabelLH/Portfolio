@@ -4,6 +4,7 @@ import Section from "@/components/Section";
 import HomeSection from "@/components/HomeSection";
 import ProfileSection from "@/components/ProfileSection";
 import ContactSection from "@/components/ContactSection";
+import Competences from "@/components/competences/CompetencesSection"
 
 
 export default function Home() {
@@ -22,7 +23,9 @@ export default function Home() {
         id="competences"
         title="Mes Compétences"
         backgroundImage="/img/photoCompet.png"
-      ></Section>
+      >
+        <Competences/>
+      </Section>
       <Section
         id="portfolio"
         title="Mes Projets"
