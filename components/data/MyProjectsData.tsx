@@ -11,7 +11,7 @@ const MyProjectsList: ProjectType[] = [
     link: null,
     github: "https://github.com/",
     gif: "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif?raw=true",
-    stacks: ["React.js", "API", "Node.js"],
+    stacks: ["react", "next", "api", "node"],
   },
   {
     title: "Mon Portfolio",
@@ -32,7 +32,7 @@ const MyProjectsList: ProjectType[] = [
         link: "https://github.com/",
       },
     ],
-    stacks: ["React.js", "TypeScript", "Tailwind css", "Next.js", "Node.js", "Eslint"],
+    stacks: ["react", "typescript", "tailwindcss", "next", "node", "eslint"],
   },
 ];
 

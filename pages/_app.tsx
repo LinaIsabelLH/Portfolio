@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
+
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   useEffect(() => {
     AOS.init();

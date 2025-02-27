@@ -20,7 +20,7 @@ const CompetencesStack = (props: Props): JSX.Element => {
             {styles.competenceLogoContainer}>
               {competence.svg}
             </div>
-            <h4 className='text-zinc-100 font-semibold'>{competence.name}</h4>
+            <h4 className='text-zinc-100 font-semibold text-xl'>{competence.name}</h4>
           </div>
         );
       }
@@ -36,7 +36,7 @@ const CompetencesStack = (props: Props): JSX.Element => {
               title={competence.name}
             />
           </div>
-          <h4 className='text-zinc-100 font-semibold'>{competence.name}</h4>
+          <h4 className='text-zinc-100 font-semibold text-xl'>{competence.name}</h4>
         </div>
       );
     });

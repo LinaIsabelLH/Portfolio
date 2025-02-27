@@ -12,7 +12,7 @@ import { scrollToSection } from "@/utils/scroll";
 
 const CompetencesSection = () => {
   return (
-    <div className="relative z-10 w-full pt-5 mt-20">
+    <div className="relative z-10 w-full pt-5 mt-10">
       <div className="flex flex-row justify-evenly items-center w-full">
         <div
           className="m-auto flex flex-col"
@@ -74,7 +74,7 @@ const CompetencesSection = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 flex pl-179 justify-between">
+      <div className="z-10 flex mt-5 pl-179 justify-between">
         <button
           className="text-3xl pt-4 animate-bounce cursor-pointer"
           onClick={() => scrollToSection("portfolio")}

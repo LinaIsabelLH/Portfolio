@@ -4,7 +4,8 @@ import Section from "@/components/Section";
 import HomeSection from "@/components/HomeSection";
 import ProfileSection from "@/components/ProfileSection";
 import ContactSection from "@/components/ContactSection";
-import CompetencesSection from "@/components/competences/CompetencesSection"
+import CompetencesSection from "@/components/competences/CompetencesSection";
+import MyProjects from "@/components/Portfolio/MyProjects";
 
 
 export default function Home() {
@@ -30,7 +31,9 @@ export default function Home() {
         id="portfolio"
         title="Mes Projets"
         backgroundImage="/img/photo-projets.png"
-      ></Section>
+      >
+        <MyProjects/>
+      </Section>
       <Section id="contact" title="Contact" backgroundImage="/img/contactPic-c.jpg">
         <ContactSection/>
       </Section>
