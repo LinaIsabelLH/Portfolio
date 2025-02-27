@@ -6,20 +6,7 @@ const MyProjectsList: ProjectType[] = [
     img: "/img/projects/WeFoodApp.png",
     imgTag: "WeFoodApp",
     descriptions: [
-      "Clone Front de Netflix version Web, en React. Utilisation de l'API de TMDB pour les données. Axios pour les requêtes. Il est possible de créer une liste partagée dans toute l'application grâce à Redux. Jest + Enzyme ont été implantés pour tester quelques composants.",
-    ],
-    link: null,
-    github: "https://github.com/",
-    gif: "https://github.com/Joliwood/Netflix-clone/raw/374c55b499f9ded606d10550f6e22f2c7f5bcaea/netflix-clone.gif?raw=true",
-    stacks: ["react", "next", "api", "node"],
-  },
-  {
-    title: "Mon Portfolio",
-    img: "/img/projects/MyPortfolioProject.png",
-    imgTag: "MyPortfolio",
-    descriptions: [
-      "Soundy est une application de type SAAS pour les passionnés de musique ! On peut écouter et partager ses propres créations musicales",
-      "L'application comprend deux repos Github, Lyric-library pour le back-end et Soundy pour le front-end. Tout a été mis en place pour avoir une scalabilité optimale.",
+      "WeFood est une application mobile en React Native et Node.js, connectant les utilisateurs à des restaurants selon leurs préférences. L'application intègre MongoDB pour la gestion des données, la géolocalisation, des filtres dynamiques, l'intégration d'APIs externes (Google Maps), ainsi qu’un système de suivi (follow) et une certification “Recommandé par les locaux” pour valoriser les avis d’utilisateurs de la même nationalité.",
     ],
     link: null,
     githubs: [
@@ -32,6 +19,18 @@ const MyProjectsList: ProjectType[] = [
         link: "https://github.com/",
       },
     ],
+    stacks: ["react", "next", "api", "node"],
+  },
+  {
+    title: "Mon Portfolio",
+    img: "/img/projects/MyPortfolioProject.png",
+    imgTag: "MyPortfolio",
+    descriptions: [
+      "Portfolio moderne et performant, conçu pour valoriser mes projets et compétences en développement web. Développé avec Next.js (SSR/SSG) pour des performances optimales et un bon référencement, il intègre TypeScript pour un code fiable et maintenable. L'expérience utilisateur est enrichie par des animations fluides avec AOS et Framer Motion, tandis que Tailwind CSS assure un design épuré et responsive",
+    ],
+    link: null,
+    github: "https://github.com/LinaIsabelLH/Portfolio.git",
+    gif: "https://github.com",
     stacks: ["react", "typescript", "tailwindcss", "next", "node", "eslint"],
   },
 ];
