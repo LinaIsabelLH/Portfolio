@@ -10,7 +10,7 @@ const ProfileSection = () => {
     <>
       <div className="z-10 flex justify-center items-center relative">
         {/* Conteneur du texte avec la bordure animée */}
-        <div className={`relative mt-20 max-w-xl my-4 p-1 ${styles.homeDescriptionContainer}`}>
+        <div className={`relative mt-20 max-w-xl my-4 p-0.5 ${styles.homeDescriptionContainer}`}>
           {/* Contenu du texte */}
           <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
             <p>
@@ -71,7 +71,7 @@ const ProfileSection = () => {
             className="absolute left-[-96px] top-4/7 w-[30px] h-[2px] bg-orange-400"
             initial={{ width: 0 }}
             animate={{ width: "100px" }}
-            transition={{ duration: 2, ease: "easeInOut", delay: 2 }}
+            transition={{ duration: 3, ease: "easeInOut", delay: 2 }}
           />
 
           <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400">
