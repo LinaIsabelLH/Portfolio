@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   frontCompetences,
   backCompetences,
@@ -7,6 +8,7 @@ import {
 } from "../data/CompetencesData";
 import CompetencesStack from "./CompetencesStack";
 import styles from "../../styles/competences.module.css";
+import { scrollToSection } from "@/utils/scroll";
 
 const CompetencesSection = () => {
   return (
@@ -55,7 +57,7 @@ const CompetencesSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col max-h-56">
         <div
           className="m-auto flex flex-col"
           data-aos="fade-up"
@@ -71,6 +73,31 @@ const CompetencesSection = () => {
             <CompetencesStack competences={technoCompetences} />
           </div>
         </div>
+      </div>
+      <div className="z-10 flex pl-179 justify-between">
+        <button
+          className="text-3xl pt-4 animate-bounce cursor-pointer"
+          onClick={() => scrollToSection("portfolio")}
+        >
+          <Image
+            src="/img/arrowDown.png"
+            alt="arrow to scroll"
+            width={24}
+            height={24}
+          />
+        </button>
+
+        <button
+          className="text-3xl mt-0 pr-25 cursor-pointer"
+          onClick={() => scrollToSection("home")}
+        >
+          <Image
+            src="/img/returnHome.png"
+            alt="arrow to return to home page"
+            width={50}
+            height={50}
+          />
+        </button>
       </div>
     </div>
   );

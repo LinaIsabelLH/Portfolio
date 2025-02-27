@@ -1,7 +1,7 @@
 .homeDescriptionContainer {
   background-repeat: no-repeat;
   background-size: 0 0, 0 0, 0% 0;
-  animation: 3s drawBorderFromLeft 0.7s forwards;
+  animation: 3s drawBorderFromLeft 1.2s forwards;
   border-radius: 35px;
 }
 

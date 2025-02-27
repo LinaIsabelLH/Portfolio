@@ -4,13 +4,17 @@ import { motion } from "framer-motion";
 import GithubLogo from "./svg/GithubLogo";
 import LinkedinLogo from "./svg/LinkedinLogo";
 import styles from "../styles/home.module.css";
+import { scrollToSection } from "@/utils/scroll";
 
 const ProfileSection = () => {
+  
   return (
     <>
       <div className="z-10 flex justify-center items-center relative">
         {/* Conteneur du texte avec la bordure animée */}
-        <div className={`relative mt-20 max-w-xl my-4 p-0.5 ${styles.homeDescriptionContainer}`}>
+        <div
+          className={`relative mt-20 max-w-xl my-4 p-0.5 ${styles.homeDescriptionContainer}`}
+        >
           {/* Contenu du texte */}
           <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
             <p>
@@ -71,7 +75,7 @@ const ProfileSection = () => {
             className="absolute left-[-96px] top-4/7 w-[30px] h-[2px] bg-orange-400"
             initial={{ width: 0 }}
             animate={{ width: "100px" }}
-            transition={{ duration: 3, ease: "easeInOut", delay: 2 }}
+            transition={{ duration: 4, ease: "easeInOut", delay: 3 }}
           />
 
           <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400">
@@ -87,8 +91,24 @@ const ProfileSection = () => {
         </div>
       </div>
 
-      <div className="z-10 mt-16">
-        <button className="font-bold text-zinc-100 text-xl">En savoir plus...</button>
+      <div className="z-10 flex w-full justify-between pl-179 mt-12">
+        <button
+          className="mt-2 text-3xl animate-bounce cursor-pointer"
+          onClick={() => scrollToSection("competences")}
+        >
+          <Image src="/img/arrowDown.png" alt="arrow to scroll" width={24} height={24}/>
+        </button>
+        <button
+          className="text-3xl mt-0 pr-25 cursor-pointer"
+          onClick={() => scrollToSection("home")}
+        >
+          <Image
+            src="/img/returnHome.png"
+            alt="arrow to return to home page"
+            width={50}
+            height={50}
+          />
+        </button>
       </div>
     </>
   );

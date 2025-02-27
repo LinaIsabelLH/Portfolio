@@ -9,7 +9,7 @@ const Header = () => {
         <h1>LILH</h1>
         {/* <Image alt="imageLogo" src="" className=" font-bold" /> */}
         <div className="space-x-16 flex items-center cursor-pointer ">
-          <Link to="accueil" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500}>
             {/* Mettre un span pour le titre de chaque lien si on peut le separer
             de l icone comme ci-dessous */}
             <span>Accueil</span>
