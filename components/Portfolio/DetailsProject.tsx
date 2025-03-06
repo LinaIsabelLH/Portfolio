@@ -30,7 +30,7 @@ const DetailsProject = (props: Props) => {
       show={showModal}
       onHide={closeModal}
     >
-      <h3>{selectedProject.title}</h3>
+      <h3 className='text-2xl font-bold'>{selectedProject.title}</h3>
       <Image
         src={imageUrl}
         alt={selectedProject.title}
@@ -46,7 +46,7 @@ const DetailsProject = (props: Props) => {
         ))}
       </div>
 
-      <h4>Récapitulatif des compétences utilisées pour ce projet : </h4>
+      <h4 className='font-semibold'>Récapitulatif des compétences utilisées pour ce projet : </h4>
       <div
         className={`${styles.detailsProjectStacksContainer} ${styles.detailsProjectSeparationLine}`}
       >
@@ -60,7 +60,7 @@ const DetailsProject = (props: Props) => {
               height={35}
               unoptimized
             />
-            <p>{stack}</p>
+            <p className='font-semibold'>{stack}</p>
           </div>
         ))}
       </div>

@@ -30,7 +30,6 @@ const MyProjectsList: ProjectType[] = [
     ],
     link: null,
     github: "https://github.com/LinaIsabelLH/Portfolio.git",
-    gif: "https://github.com",
     stacks: ["react", "typescript", "tailwindcss", "next", "node", "eslint"],
   },
 ];
