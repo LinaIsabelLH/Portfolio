@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import styles from "../styles/home.module.css";
+import styles from "../styles/profile.module.css";
 import { scrollToSection } from "@/utils/scroll";
 import Footer from "./Footer";
 
@@ -24,7 +24,7 @@ const ContactSection = () => {
       <div className=" z-10 relative flex w-full justify-center items-center mt-20">
         {/* Conteneur du texte avec la bordure animée */}
         <div
-          className={`relative max-w-lg p-0.5 ${styles.homeDescriptionContainer}`}
+          className={`relative max-w-lg p-0.5 ${styles.descriptionContainer}`}
           data-aos="fade-right"
           data-aos-offset="100"
           data-aos-anchor-placement="top-bottom"

@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import GithubLogo from "./svg/GithubLogo";
 import LinkedinLogo from "./svg/LinkedinLogo";
-import styles from "../styles/home.module.css";
+import styles from "../styles/profile.module.css";
 import { scrollToSection } from "@/utils/scroll";
 
 const ProfileSection = () => {
-  
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
+
+  const [startLineAnimation, setStartLineAnimation] = useState(false);
+
+  // Déclenche l'animation de la ligne après que la bordure soit animée
+  useEffect(() => {
+    if (isInView) {
+      const timer = setTimeout(() => {
+        setStartLineAnimation(true);
+      }, 800); // Délai de 800ms après l'animation des bordures
+      return () => clearTimeout(timer);
+    } else {
+      setStartLineAnimation(false); // Réinitialiser si on quitte la vue
+    }
+  }, [isInView]);
+
   return (
     <>
-      <div className="z-10 flex justify-center items-center relative">
-        {/* Conteneur du texte avec la bordure animée */}
-        <div
-          className={`relative mt-20 max-w-xl my-4 p-0.5 ${styles.homeDescriptionContainer}`}
+      <div ref={ref} className="z-10 flex justify-center items-center relative">
+        {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
+        <motion.div
+          className={`relative mt-20 max-w-xl my-4 p-0.5 ${
+            isInView ? styles.descriptionContainer : ""
+          }`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isInView ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
         >
           {/* Contenu du texte */}
           <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
@@ -66,7 +87,7 @@ const ProfileSection = () => {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Photo de profil */}
         <div className="ml-24 flex justify-center items-center pt-16 relative">
@@ -74,8 +95,8 @@ const ProfileSection = () => {
           <motion.div
             className="absolute left-[-96px] top-4/7 w-[30px] h-[2px] bg-orange-400"
             initial={{ width: 0 }}
-            animate={{ width: "100px" }}
-            transition={{ duration: 4, ease: "easeInOut", delay: 3 }}
+            animate={{ width: startLineAnimation ? "100px" : 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
           />
 
           <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400">
@@ -96,7 +117,12 @@ const ProfileSection = () => {
           className="mt-2 text-3xl animate-bounce cursor-pointer"
           onClick={() => scrollToSection("competences")}
         >
-          <Image src="/img/arrowDown.png" alt="arrow to scroll" width={24} height={24}/>
+          <Image
+            src="/img/arrowDown.png"
+            alt="arrow to scroll"
+            width={24}
+            height={24}
+          />
         </button>
         <button
           className="text-3xl mt-0 pr-25 cursor-pointer"

@@ -1,11 +1,11 @@
-.homeDescriptionContainer {
+/* Animations CSS Bordures*/
+
+.descriptionContainer {
   background-repeat: no-repeat;
   background-size: 0 0, 0 0, 0% 0;
-  animation: 3s drawBorderFromLeft 1.2s forwards;
+  animation: 1s drawBorderFromLeft 0.5s forwards;
   border-radius: 35px;
 }
-
-/* Animations CSS */
 
 @keyframes drawBorderFromLeft {
   0% {
