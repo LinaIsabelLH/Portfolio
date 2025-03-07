@@ -6,6 +6,7 @@ import MyProjectsData from "../data/MyProjectsData";
 
 import DetailsProject from "./DetailsProject";
 import ProjectLink from "./ProjectButtonLink";
+import VideoDemo from "./VideoDemoButton";
 
 import styles from "../../styles/myProjects.module.css";
 import { scrollToSection } from "@/utils/scroll";
@@ -76,6 +77,7 @@ const MyProjects = () => {
                         <h4>{github.title}</h4>
                       </a>
                     ))}
+                  <VideoDemo selectedProject={data}/>
                   <ProjectLink selectedProject={data} />
                   <Button onClick={() => openModal(data)}>
                     <h4>Détails</h4>

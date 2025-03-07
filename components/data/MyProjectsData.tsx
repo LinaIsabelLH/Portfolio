@@ -8,9 +8,10 @@ const MyProjectsList: ProjectType[] = [
     descriptions: [
       "WeFood est une application mobile en React Native et Node.js, connectant les utilisateurs à des restaurants selon leurs préférences. L'application intègre MongoDB pour la gestion des données, la géolocalisation, des filtres dynamiques, l'intégration d'APIs externes (Google Maps), ainsi qu’un système de suivi (follow) et une certification “Recommandé par les locaux” pour valoriser les avis d’utilisateurs de la même nationalité.",
     ],
-    video: null,
+    video:
+      "https://www.canva.com/design/DAGhCE6qPPI/W0UOTKDqDwHvrt0SXbVD4A/watch",
     link: null,
-    github: 'Non disponible',
+    github: "Non disponible",
     stacks: ["react", "next", "api", "node"],
   },
   {

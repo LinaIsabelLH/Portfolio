@@ -13,7 +13,7 @@ export type CompetenceType = {
     img: string;
     imgTag: string;
     descriptions: string[];
-    video: string | null;
+    video?: string | null;
     link: string | null;
     github?: string;
     githubs?: { title: string, link: string }[];
