@@ -7,7 +7,6 @@ import {
   toolsCompetences,
 } from "../data/CompetencesData";
 import CompetencesStack from "./CompetencesStack";
-import styles from "../../styles/competences.module.css";
 import { scrollToSection } from "@/utils/scroll";
 
 const CompetencesSection = () => {
@@ -22,8 +21,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className={styles.individualCompetenceBlock}>
-            <h3 className={styles.ensembleCompetencesTitle}>FrontEnd</h3>
+          <div className="flex flex-col mb-10 pt-5 bg-gray-800 shadow-lg border border-orange-400 rounded-3xl">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">FrontEnd</h3>
             <CompetencesStack competences={frontCompetences} />
           </div>
         </div>
@@ -36,8 +35,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className={styles.individualCompetenceBlock}>
-            <h3 className={styles.ensembleCompetencesTitle}>BackEnd</h3>
+          <div className="flex flex-col mb-10 pt-5 bg-gray-800 shadow-lg border border-orange-400 rounded-3xl">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">BackEnd</h3>
             <CompetencesStack competences={backCompetences} />
           </div>
         </div>
@@ -49,8 +48,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className={styles.individualCompetenceBlock}>
-            <h3 className={styles.ensembleCompetencesTitle}>
+          <div className="flex flex-col mb-10 pt-5 bg-gray-800 shadow-lg border border-orange-400 rounded-3xl">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">
               Les outils que j&apos;utilise
             </h3>
             <CompetencesStack competences={toolsCompetences} />
@@ -66,8 +65,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className={styles.individualCompetenceBlock}>
-            <h3 className={styles.ensembleCompetencesTitle}>
+          <div className="flex flex-col mb-10 pt-5 bg-gray-800 shadow-lg border border-orange-400 rounded-3xl">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">
               Les technos que j&apos;ai travaillé
             </h3>
             <CompetencesStack competences={technoCompetences} />

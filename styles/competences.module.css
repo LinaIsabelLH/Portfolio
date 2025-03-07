@@ -9,42 +9,6 @@
   }
 }
 
-.individualCompetenceBlock {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-  padding-top: 20px;
-  background: #1e293b;
-  box-shadow: 0 20px 25px -5px rgba(90, 90, 90, 0.1),
-    0 8px 10px -6px rgba(110, 110, 110, 0.1);
-  border: 1px solid #fb923c;
-  border-radius: 30px;
-
-  > div {
-    display: flex;
-    justify-content: center;
-    gap: 2rem 4rem;
-    flex-wrap: wrap;
-    padding: 20px 30px 30px 30px;
-
-    > div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-  }
-}
-
-.ensembleCompetencesTitle {
-  color: #fb923c;
-  font-weight: bold;
-  padding: 0 10px;
-  text-align: center;
-  font-size: 24px;
-}
 
 .competenceLogoContainer {
   z-index: 10;
