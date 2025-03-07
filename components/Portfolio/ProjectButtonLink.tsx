@@ -13,10 +13,10 @@ const ProjectLink = (props: Props) => {
   if (projectLink != null) {
     return (
       <a href={projectLink} target="blank">
-        <h4>Voir le Projet</h4>
+        <h4>Voir le projet</h4>
       </a>
     );
-  }
+  } 
 
   return (
     <h4 className="disabledButton">Projet local</h4>
