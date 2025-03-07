@@ -10,9 +10,9 @@ const VideoDemo = (props: Props) => {
   const { selectedProject } = props;
   const { video: videoProject } = selectedProject;
 
-  if (videoProject === null) {
+  if (videoProject === "Non disponible") {
     return;
-  } else if (videoProject != "Non disponible") {
+  } else if (videoProject != null ) {
     return (
       <a href={videoProject} target="blank">
         <h4>Vidéo Démo</h4>

@@ -7,7 +7,6 @@ import ContactSection from "@/components/ContactSection";
 import CompetencesSection from "@/components/competences/CompetencesSection";
 import MyProjects from "@/components/Portfolio/MyProjects";
 
-
 export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -25,17 +24,21 @@ export default function Home() {
         title="Mes Compétences"
         backgroundImage="/img/photoCompet.png"
       >
-        <CompetencesSection/>
+        <CompetencesSection />
       </Section>
       <Section
         id="portfolio"
         title="Mes Projets"
         backgroundImage="/img/photo-projets.png"
       >
-        <MyProjects/>
+        <MyProjects />
       </Section>
-      <Section id="contact" title="Contact" backgroundImage="/img/contactPic-c.jpg">
-        <ContactSection/>
+      <Section
+        id="contact"
+        title="Contact"
+        backgroundImage="/img/contactPic-c.jpg"
+      >
+        <ContactSection />
       </Section>
     </div>
   );

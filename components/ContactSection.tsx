@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../styles/home.module.css";
 import { scrollToSection } from "@/utils/scroll";
+import Footer from "./Footer";
 
 const ContactSection = () => {
   const email = "londonohidalgo@gmail.com";
@@ -110,6 +111,7 @@ const ContactSection = () => {
           />
         </button>
       </div>
+      <Footer/>
     </div>
   );
 };

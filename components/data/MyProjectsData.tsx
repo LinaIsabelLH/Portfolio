@@ -21,7 +21,7 @@ const MyProjectsList: ProjectType[] = [
     descriptions: [
       "Portfolio moderne et performant, conçu pour valoriser mes projets et compétences en développement web. Développé avec Next.js (SSR/SSG) pour des performances optimales et un bon référencement, il intègre TypeScript pour un code fiable et maintenable. L'expérience utilisateur est enrichie par des animations fluides avec AOS et Framer Motion, tandis que Tailwind CSS assure un design épuré et responsive",
     ],
-    video: null,
+    video: "Non disponible",
     link: null,
     github: "https://github.com/LinaIsabelLH/Portfolio.git",
     stacks: ["react", "typescript", "tailwindcss", "next", "node", "eslint"],
