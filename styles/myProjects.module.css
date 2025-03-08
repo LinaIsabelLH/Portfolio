@@ -10,63 +10,6 @@
   }
   
   
-  .detailsProjectContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 50;
-    display: flex !important;
-    padding: 10vh 0;
-    overflow: hidden;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
-    
-  
-    > div {
-      width: auto;
-      position: relative;
-      overflow: auto;
-      max-width: min(700px, 90vw);
-      background: radial-gradient(
-        #fb923c, #1e293b
-      );
-      border-radius: 20px;
-      border: 1px solid #fb923c;
-      padding: 0 !important;
-  
-      > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        padding: 30px 25px;
-  
-        @media screen and (max-width: 500px) {
-          padding: 20px 10px;
-        }
-
-        > img {
-          width: 100%;
-          max-height: 370px;
-          height: auto;
-          margin: 20px auto;
-          object-fit: cover;
-          object-position: top;
-          border: 1px solid #1e293b;
-        }
-        
-      }
-    }
-  
-    > * {
-      color: #f4f4f5;
-    }
-    
-  }
   
   .detailsProjectSeparationLine {
     position: relative;
