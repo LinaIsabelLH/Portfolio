@@ -7,8 +7,8 @@ import MyProjectsData from "../data/MyProjectsData";
 import DetailsProject from "./DetailsProject";
 import ProjectLink from "./ProjectButtonLink";
 import VideoDemo from "./VideoDemoButton";
+import styles from "@/styles/myProjects.module.css"
 
-import styles from "../../styles/myProjects.module.css";
 import { scrollToSection } from "@/utils/scroll";
 import { type ProjectType } from "../../types/types";
 
@@ -48,7 +48,7 @@ const MyProjects = () => {
         {MyProjectsData.map((data) => (
           <div key={data.title} data-aos="fade-up">
             <div
-              className={`relative w-[330px] h-[430px] flex flex-col overflow-hidden items-center min-w-[270px] max-w-[400px] ${styles.myProjectIndividualContainer}`}
+              className={`relative w-[330px] h-[430px] flex flex-col overflow-hidden items-center min-w-[270px] max-w-[400px] group ${styles.myProjectIndividualContainer}`}
             >
               <div>
                 <Image
@@ -57,29 +57,29 @@ const MyProjects = () => {
                   title={data.imgTag}
                   width={500}
                   height={500}
-                  className={`absolute top-0 left-0 object-cover w-[330px] h-[320px]  transition transition-filter duration-250 ${styles.myProjectsPicture}`}
+                  className="absolute top-0 left-0 object-cover w-[330px] h-[320px]  transition transition-filter duration-250 group-hover:blur-sm"
                 />
 
                 <div
-                  className={`absolute flex flex-col items-center gap-3 top-1/2 left-1/2 w-full opacity-0 text-zinc-100 font-bold ${styles.projectGithubButtons}`}
+                 className="absolute flex flex-col items-center gap-3 top-1/2 left-1/2 w-full opacity-0 group-hover:opacity-100 group-hover:flex animate-fadeIn text-zinc-100 font-bold translate-x-[-50%] translate-y-[-50%] max-w-[80%]"
                 >
                   {data.github &&
                     (data.github === "Non disponible" ? (
-                      <h4 className="disabledButton">Github privé</h4>
+                      <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-gray-500 cursor-not-allowed">Github privé</h4>
                     ) : (
-                      <a href={data.github} target="blank">
+                      <a href={data.github} target="blank"  className="no-underline bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400">
                         <h4>Voir le Github</h4>
                       </a>
                     ))}
                   {data.githubs &&
                     data.githubs.map((github) => (
-                      <a href={github.link} target="blank" key={github.title}>
+                      <a href={github.link} target="blank" key={github.title}  className="no-underline bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400">
                         <h4>{github.title}</h4>
                       </a>
                     ))}
                   <VideoDemo selectedProject={data}/>
                   <ProjectLink selectedProject={data} />
-                  <Button onClick={() => openModal(data)}>
+                  <Button onClick={() => openModal(data)} className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400">
                     <h4>Détails</h4>
                   </Button>
                 </div>

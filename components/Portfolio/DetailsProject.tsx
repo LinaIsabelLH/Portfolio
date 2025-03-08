@@ -67,16 +67,16 @@ const DetailsProject = (props: Props) => {
       <div className={styles.detailsProjectLinksContainer}>
         {selectedProject.github && (
           selectedProject.github === 'Non disponible'
-            ? (<h4 className="disabledButton">Github privé</h4>)
+            ? (<h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-gray-500 cursor-not-allowed">Github privé</h4>)
             : (
-              <a href={selectedProject.github} target="blank">
+              <a href={selectedProject.github} target="blank" className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400">
                 <h4>Voir le Github</h4>
               </a>
             )
         )}
         {selectedProject.githubs && (
           selectedProject.githubs.map((github) => (
-            <a href={github.link} target="blank" key={github.title}>
+            <a href={github.link} target="blank" key={github.title} className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400">
               <h4>{github.title}</h4>
             </a>
           ))
@@ -85,6 +85,7 @@ const DetailsProject = (props: Props) => {
         <button
           type="button"
           onClick={closeModal}
+          className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400"
         >
           <h4>Retourner aux projets</h4>
         </button>
