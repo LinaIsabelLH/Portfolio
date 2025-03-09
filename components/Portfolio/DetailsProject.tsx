@@ -36,20 +36,21 @@ const DetailsProject = (props: Props) => {
             unoptimized
             className="w-full max-h-[370px] h-auto my-5 object-cover object-top border border-slate-800"
           />
-
-          <div className="relative pb-8 w-full text-center">
+ {/* DetailsProjectSeparationLina */}
+          <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] w-full text-center">
             {selectedProject.descriptions.map((description) => (
-              <p key={description} className="mb-2">
+              <p key={description} className="mb-2.5 text-lg">
                 {description}
               </p>
             ))}
             <div className="absolute bottom-0 left-[10%] w-[80%] border-b-2 border-gray-600 rounded-sm"></div>
           </div>
           {/* Stacks utilisés */}
-          <h4 className="font-semibold text-center">
+          <h4 className="font-semibold text-center text-lg">
             Récapitulatif des compétences utilisées pour ce projet :{" "}
           </h4>
-          <div className="flex flex-wrap gap-2 justify-center w-full pb-8">
+  {/* DetailsProjectSeparationLina */}
+          <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] flex flex-wrap gap-2 justify-center w-full">
             {stacks.map((stack, index) => (
               <div
                 key={index}
@@ -64,7 +65,7 @@ const DetailsProject = (props: Props) => {
                   unoptimized
                   className="object-contain"
                 />
-                <p className="font-semibold">{stack}</p>
+                <p className="mb-2.5 text-lg pt-2">{stack}</p>
               </div>
             ))}
           </div>
