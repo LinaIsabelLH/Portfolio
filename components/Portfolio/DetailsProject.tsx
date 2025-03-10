@@ -36,8 +36,8 @@ const DetailsProject = (props: Props) => {
             unoptimized
             className="w-full max-h-[370px] h-auto my-5 object-cover object-top border border-slate-800"
           />
- {/* DetailsProjectSeparationLina */}
-          <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] w-full text-center">
+          {/* projectlinksContainer */}
+          <div className="flex items-center gap-2.5 flex-wrap justify-center w-full text-center">
             {selectedProject.descriptions.map((description) => (
               <p key={description} className="mb-2.5 text-lg">
                 {description}
@@ -46,15 +46,14 @@ const DetailsProject = (props: Props) => {
             <div className="absolute bottom-0 left-[10%] w-[80%] border-b-2 border-gray-600 rounded-sm"></div>
           </div>
           {/* Stacks utilisés */}
-          <h4 className="font-semibold text-center text-lg">
+          <h4 className="font-semibold text-center text-lg pt-3 px-2.5">
             Récapitulatif des compétences utilisées pour ce projet :{" "}
           </h4>
-  {/* DetailsProjectSeparationLina */}
-          <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] flex flex-wrap gap-2 justify-center w-full">
+          <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] flex flex-wrap gap-2.5 justify-center w-full">
             {stacks.map((stack, index) => (
               <div
                 key={index}
-                className="flex items-center gap-2 border border-gray-600 rounded-lg px-3 py-2"
+                className="flex items-center gap-2.5 border border-gray-600 rounded-lg px-[10px] py-[7px]"
               >
                 <Image
                   src={`/img/competences/${stack}Logo.png`}
@@ -73,14 +72,14 @@ const DetailsProject = (props: Props) => {
           <div className="flex flex-wrap gap-2 justify-center items-center">
             {selectedProject.github &&
               (selectedProject.github === "Non disponible" ? (
-                <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-gray-500 cursor-not-allowed font-bold">
+                <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] py-2 flex items-center justify-center px-4 text-gray-500 cursor-not-allowed font-bold">
                   Github privé
                 </h4>
               ) : (
                 <a
                   href={selectedProject.github}
                   target="blank"
-                  className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400"
+                  className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 py-2 cursor-pointer hover:text-orange-400"
                 >
                   <h4 className="font-bold">Voir le Github</h4>
                 </a>
@@ -102,14 +101,14 @@ const DetailsProject = (props: Props) => {
             <button
               type="button"
               onClick={closeModal}
-              className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer rounded-bl-md rounded-br-md hover:text-orange-400"
+              className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 py-2 cursor-pointer hover:text-orange-400"
             >
               <h4 className="font-bold">Retourner aux projets</h4>
             </button>
           </div>
           {/* Bouton de fermeture */}
           <Button
-            className="absolute top-4 right-4 bg-gray-800 border border-gray-600 rounded-lg h-8 w-8 flex items-center justify-center text-slate-100 text-xl hover:text-orange-400"
+            className="absolute top-4 right-4 bg-slate-800 border border-gray-600 rounded-[10px] h-[30px] w-[30px] flex items-center justify-center text-slate-100 text-xl cursor-pointer hover:text-orange-400"
             onClick={closeModal}
           >
             X
