@@ -44,11 +44,11 @@ const MyProjects = () => {
 
   return (
     <div className="relative z-10 w-full pt-5 mt-10">
-      <div className="flex justify-evenly flex-wrap gap-13 w-[80vw] min-h-[430px] m-auto">
+      <div className="flex justify-evenly flex-wrap gap-13 w-[80vw] min-h-[430px] m-auto max-[500px]:w-[85vw]">
         {MyProjectsData.map((data) => (
           <div key={data.title} data-aos="fade-up">
             <div
-              className={`relative w-[330px] h-[430px] flex flex-col overflow-hidden items-center min-w-[270px] max-w-[400px] rounded-xl border-transparent bg-[radial-gradient(circle,#fb923c,#1e293b)] shadow-2xl shadow-orange-400 group`}
+              className={`relative w-[330px] h-[430px] flex flex-col overflow-hidden items-center min-w-[270px] rounded-xl border-transparent bg-[radial-gradient(circle,#fb923c,#1e293b)] shadow-2xl shadow-orange-400 group max-[1100px]:max-w-[85vw]`}
             >
               <div>
                 <Image

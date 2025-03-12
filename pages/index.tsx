@@ -6,6 +6,7 @@ import ProfileSection from "@/components/ProfileSection";
 import ContactSection from "@/components/ContactSection";
 import CompetencesSection from "@/components/competences/CompetencesSection";
 import MyProjects from "@/components/Portfolio/MyProjects";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         backgroundImage="/img/contactPic-c.jpg"
       >
         <ContactSection />
+        <Footer/>
       </Section>
     </div>
   );
