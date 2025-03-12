@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../styles/svg.module.css";
+
 
 const NextLogo = () => {
   return (
@@ -7,7 +7,7 @@ const NextLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 15 15"
-      className={styles.logoCompetence}
+      className="w-[60%] h-[60%] object-contain"
     >
       <title>Next SVG</title>
       <path

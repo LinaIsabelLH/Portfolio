@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from "../../styles/svg.module.css";
 
 const NodeLogo = () => {
   return (
@@ -7,7 +6,7 @@ const NodeLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 74 82"
-      className={styles.logoCompetence}
+      className="w-[60%] h-[60%] object-contain"
     >
       <title>Node SVG</title>
       <path
