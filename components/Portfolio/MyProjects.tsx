@@ -7,7 +7,7 @@ import MyProjectsData from "../data/MyProjectsData";
 import DetailsProject from "./DetailsProject";
 import ProjectLink from "./ProjectButtonLink";
 import VideoDemo from "./VideoDemoButton";
-import styles from "@/styles/myProjects.module.css"
+
 
 import { scrollToSection } from "@/utils/scroll";
 import { type ProjectType } from "../../types/types";
@@ -48,7 +48,7 @@ const MyProjects = () => {
         {MyProjectsData.map((data) => (
           <div key={data.title} data-aos="fade-up">
             <div
-              className={`relative w-[330px] h-[430px] flex flex-col overflow-hidden items-center min-w-[270px] max-w-[400px] group ${styles.myProjectIndividualContainer}`}
+              className={`relative w-[330px] h-[430px] flex flex-col overflow-hidden items-center min-w-[270px] max-w-[400px] rounded-xl border-transparent bg-[radial-gradient(circle,#fb923c,#1e293b)] shadow-2xl shadow-orange-400 group`}
             >
               <div>
                 <Image
