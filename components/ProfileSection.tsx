@@ -26,7 +26,7 @@ const ProfileSection = () => {
 
   return (
     <>
-      <div ref={ref} className="z-10 flex justify-center items-center relative">
+      <div ref={ref} className="z-10 flex justify-center items-center relative max-[970px]:flex-wrap-reverse">
         {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
         <motion.div
           className={`relative mt-20 max-w-xl my-4 p-0.5 ${
@@ -99,7 +99,7 @@ const ProfileSection = () => {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
 
-          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400">
+          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 max-[1024px]:max-w-[250px] max-[1024px]:max-h-[300px]">
             <Image
               src="/img/photoProfile.jpg"
               alt="photoProfile"
