@@ -26,7 +26,10 @@ const ProfileSection = () => {
 
   return (
     <>
-      <div ref={ref} className="z-10 flex justify-center items-center relative max-[970px]:flex-wrap-reverse">
+      <div
+        ref={ref}
+        className="z-10 flex justify-center items-center relative max-[970px]:flex-wrap-reverse"
+      >
         {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
         <motion.div
           className={`relative mt-20 max-w-xl my-4 p-0.5 ${
@@ -112,29 +115,33 @@ const ProfileSection = () => {
         </div>
       </div>
 
-      <div className="z-10 flex w-full justify-between pl-179 mt-12">
-        <button
-          className="mt-2 text-3xl animate-bounce cursor-pointer"
-          onClick={() => scrollToSection("competences")}
-        >
-          <Image
-            src="/img/arrowDown.png"
-            alt="arrow to scroll"
-            width={24}
-            height={24}
-          />
-        </button>
-        <button
-          className="text-3xl mt-0 pr-25 cursor-pointer"
-          onClick={() => scrollToSection("home")}
-        >
-          <Image
-            src="/img/returnHome.png"
-            alt="arrow to return to home page"
-            width={50}
-            height={50}
-          />
-        </button>
+      <div className="z-10 flex w-screen justify-center mt-12">
+        <div className="flex w-[55%] justify-end self-center">
+          <button
+            className="mt-2 text-3xl animate-bounce cursor-pointer"
+            onClick={() => scrollToSection("competences")}
+          >
+            <Image
+              src="/img/arrowDown.png"
+              alt="arrow to scroll"
+              width={24}
+              height={24}
+            />
+          </button>
+        </div>
+        <div className="flex w-[45%] justify-end self-center">
+          <button
+            className="text-3xl mt-0 pr-25 cursor-pointer"
+            onClick={() => scrollToSection("home")}
+          >
+            <Image
+              src="/img/returnHome.png"
+              alt="arrow to return to home page"
+              width={50}
+              height={50}
+            />
+          </button>
+        </div>
       </div>
     </>
   );

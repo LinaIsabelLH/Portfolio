@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import styles from "../styles/profile.module.css";
 import { scrollToSection } from "@/utils/scroll";
 
-
 const ContactSection = () => {
   const email = "londonohidalgo@gmail.com";
 
@@ -98,20 +97,21 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 flex mt-20 mr-25 justify-end">
-        <button
-          className="text-3xl cursor-pointer"
-          onClick={() => scrollToSection("home")}
-        >
-          <Image
-            src="/img/returnHome.png"
-            alt="arrow to return to home page"
-            width={50}
-            height={50}
-          />
-        </button>
+      <div className="z-10 flex w-screen mt-20 justify-end">
+        <div className="flex w-[45%] justify-end self-center">
+          <button
+            className="text-3xl mt-0 pr-25 cursor-pointer"
+            onClick={() => scrollToSection("home")}
+          >
+            <Image
+              src="/img/returnHome.png"
+              alt="arrow to return to home page"
+              width={50}
+              height={50}
+            />
+          </button>
+        </div>
       </div>
-      
     </div>
   );
 };
