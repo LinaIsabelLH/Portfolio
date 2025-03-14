@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import {
   frontCompetences,
   backCompetences,
@@ -7,7 +6,7 @@ import {
   toolsCompetences,
 } from "../data/CompetencesData";
 import CompetencesStack from "./CompetencesStack";
-import { scrollToSection } from "@/utils/scroll";
+import ScrollButtons from "../ScrollButtons";
 
 const CompetencesSection = () => {
   return (
@@ -78,32 +77,7 @@ const CompetencesSection = () => {
         </div>
       </div>
       <div className="z-10 flex w-screen mt-5 justify-center">
-        <div className="flex w-[55%] justify-end self-center">
-          <button
-            className="text-3xl pt-4 animate-bounce cursor-pointer"
-            onClick={() => scrollToSection("portfolio")}
-          >
-            <Image
-              src="/img/arrowDown.png"
-              alt="arrow to scroll"
-              width={24}
-              height={24}
-            />
-          </button>
-        </div>
-        <div className="flex w-[45%] justify-end self-center">
-          <button
-            className="text-3xl mt-0 pr-25 cursor-pointer"
-            onClick={() => scrollToSection("home")}
-          >
-            <Image
-              src="/img/returnHome.png"
-              alt="arrow to return to home page"
-              width={50}
-              height={50}
-            />
-          </button>
-        </div>
+        <ScrollButtons/>
       </div>
     </div>
   );

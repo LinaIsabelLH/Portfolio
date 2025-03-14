@@ -8,8 +8,8 @@ import DetailsProject from "./DetailsProject";
 import ProjectLink from "./ProjectButtonLink";
 import VideoDemo from "./VideoDemoButton";
 
-import { scrollToSection } from "@/utils/scroll";
 import { type ProjectType } from "../../types/types";
+import ScrollButtons from "../ScrollButtons";
 
 const MyProjects = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
@@ -120,32 +120,7 @@ const MyProjects = () => {
         {projectModalJSX}
       </div>
       <div className="z-10 flex w-screen mt-24 justify-center">
-        <div className="flex w-[55%] justify-end self-center">
-          <button
-            className="text-3xl pt-4 animate-bounce cursor-pointer"
-            onClick={() => scrollToSection("contact")}
-          >
-            <Image
-              src="/img/arrowDown.png"
-              alt="arrow to scroll"
-              width={24}
-              height={24}
-            />
-          </button>
-        </div>
-        <div className="flex w-[45%] justify-end self-center">
-          <button
-            className="text-3xl mt-0 pr-25 cursor-pointer"
-            onClick={() => scrollToSection("home")}
-          >
-            <Image
-              src="/img/returnHome.png"
-              alt="arrow to return to home page"
-              width={50}
-              height={50}
-            />
-          </button>
-        </div>
+        <ScrollButtons/>
       </div>
     </div>
   );

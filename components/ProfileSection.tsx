@@ -4,13 +4,14 @@ import Image from "next/image";
 import GithubLogo from "./svg/GithubLogo";
 import LinkedinLogo from "./svg/LinkedinLogo";
 import styles from "../styles/profile.module.css";
-import { scrollToSection } from "@/utils/scroll";
-// import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "react-responsive";
+import ScrollButtons from "./ScrollButtons";
+
 
 const ProfileSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
-  // const isMobile = useMediaQuery({ query: "(max-width: 970px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 970px)" });
 
   const [startLineAnimation, setStartLineAnimation] = useState(false);
 
@@ -21,8 +22,6 @@ const ProfileSection = () => {
         setStartLineAnimation(true);
       }, 800); // Délai de 800ms après l'animation des bordures
       return () => clearTimeout(timer);
-    } else {
-      setStartLineAnimation(false); // Réinitialiser si on quitte la vue
     }
   }, [isInView]);
 
@@ -99,8 +98,11 @@ const ProfileSection = () => {
           {/* Ligne animée entre le cadre et la photo */}
           <motion.div
             className="absolute left-[-96px] top-[57%] w-[30px] h-[2px] bg-orange-400 max-[970px]:top-[86%] max-[970px]:left-[19px] "
-            initial={{ width: 0 }}
-            animate={{ width: startLineAnimation ? "100px" : 0 }}
+            initial={{ width: 0, height: 0 }}
+            animate={{
+              width: startLineAnimation && !isMobile ? "100px" : 0,
+              height: startLineAnimation && isMobile ? "100px" : 0,
+            }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
 
@@ -117,33 +119,8 @@ const ProfileSection = () => {
         </div>
       </div>
 
-      <div className="z-10 flex w-screen justify-center mt-12">
-        <div className="flex w-[55%] justify-end self-center">
-          <button
-            className="mt-2 text-3xl animate-bounce cursor-pointer"
-            onClick={() => scrollToSection("competences")}
-          >
-            <Image
-              src="/img/arrowDown.png"
-              alt="arrow to scroll"
-              width={24}
-              height={24}
-            />
-          </button>
-        </div>
-        <div className="flex w-[45%] justify-end self-center">
-          <button
-            className="text-3xl mt-0 pr-25 cursor-pointer"
-            onClick={() => scrollToSection("home")}
-          >
-            <Image
-              src="/img/returnHome.png"
-              alt="arrow to return to home page"
-              width={50}
-              height={50}
-            />
-          </button>
-        </div>
+      <div className="z-10 flex w-screen justify-center">
+        <ScrollButtons/>
       </div>
     </>
   );

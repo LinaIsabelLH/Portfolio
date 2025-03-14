@@ -98,7 +98,7 @@ const ContactSection = () => {
         </div>
       </div>
       <div className="z-10 flex w-screen mt-20 justify-end">
-        <div className="flex w-[45%] justify-end self-center">
+        <div className="flex w-[50%] justify-end self-center">
           <button
             className="text-3xl mt-0 pr-25 cursor-pointer"
             onClick={() => scrollToSection("home")}
