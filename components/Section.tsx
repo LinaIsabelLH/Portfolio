@@ -18,7 +18,7 @@ const Section: React.FC<SectionProps> = ({
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1100) {
+      if (window.innerWidth < 768) {
         setBgImage(""); // Supprime l'image pour les petits écrans
       } else {
         setBgImage(backgroundImage); // Remet l'image sur les grands écrans
@@ -34,7 +34,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`relative w-screen h-screen overflow-x-hidden flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat pt-24 ${
+      className={`relative w-screen h-screen overflow-x-hidden flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat pt-24 max-[1100px]:pt-10 ${
         bgImage ? "" : "bg-stone-900"
       }`}
       style={{
