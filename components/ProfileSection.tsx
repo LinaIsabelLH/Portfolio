@@ -95,16 +95,16 @@ const ProfileSection = () => {
         </motion.div>
 
         {/* Photo de profil */}
-        <div className="ml-24 flex justify-center items-center pt-16 relative max-[970px]:pt-14 max-[970px]:pb-14 max-[970px]:ml-0">
+        <div className="ml-24 flex justify-center items-center pt-16 relative max-[970px]:pt-14 max-[970px]:pb-14 max-[970px]:mr-24">
           {/* Ligne animée entre le cadre et la photo */}
           <motion.div
-            className="absolute left-[-96px] top-[50%] w-[30px] h-[2px] bg-orange-400 max-[970px]:top-[86%] max-[970px]:left-[19px] "
+            className="absolute left-[-96px] top-[57%] w-[30px] h-[2px] bg-orange-400 max-[970px]:top-[86%] max-[970px]:left-[19px] "
             initial={{ width: 0 }}
             animate={{ width: startLineAnimation ? "100px" : 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
 
-          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 max-[1024px]:max-w-[250px] max-[1024px]:max-h-[300px] relative">
+          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 relative">
             <Image
               src="/img/photoProfile.jpg"
               alt="photoProfile"
