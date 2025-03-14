@@ -20,6 +20,7 @@ const ProfileSection = () => {
     if (isInView) {
       const timer = setTimeout(() => {
         setStartLineAnimation(true);
+        console.log("Animation démarrée !");
       }, 800); // Délai de 800ms après l'animation des bordures
       return () => clearTimeout(timer);
     }
@@ -119,7 +120,7 @@ const ProfileSection = () => {
         </div>
       </div>
 
-      <div className="z-10 flex w-screen justify-center">
+      <div className="z-10 flex w-screen justify-center mt-10">
         <ScrollButtons/>
       </div>
     </>
