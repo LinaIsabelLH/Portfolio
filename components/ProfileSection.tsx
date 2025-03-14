@@ -20,8 +20,7 @@ const ProfileSection = () => {
     if (isInView) {
       const timer = setTimeout(() => {
         setStartLineAnimation(true);
-        console.log("Animation démarrée !");
-      }, 800); // Délai de 800ms après l'animation des bordures
+      }, 700); // Délai de 800ms après l'animation des bordures
       return () => clearTimeout(timer);
     }
   }, [isInView]);
@@ -98,13 +97,13 @@ const ProfileSection = () => {
         <div className="ml-24 flex justify-center items-center pt-16 relative max-[970px]:pt-14 max-[970px]:pb-14 max-[970px]:mr-24">
           {/* Ligne animée entre le cadre et la photo */}
           <motion.div
-            className="absolute left-[-96px] top-[57%] w-[30px] h-[2px] bg-orange-400 max-[970px]:top-[86%] max-[970px]:left-[19px] "
+            className="absolute left-[-96px] top-[57%] bg-orange-400 max-[970px]:top-[88.5%] max-[970px]:left-[160px] "
             initial={{ width: 0, height: 0 }}
             animate={{
-              width: startLineAnimation && !isMobile ? "100px" : 0,
-              height: startLineAnimation && isMobile ? "100px" : 0,
+              width: startLineAnimation && !isMobile ? "100px" : "2px",
+              height: startLineAnimation && isMobile ? "60px" : "2px",
             }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            transition={{ duration: 2.7, ease: "easeInOut" }}
           />
 
           <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 relative">
