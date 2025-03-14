@@ -5,10 +5,13 @@ import GithubLogo from "./svg/GithubLogo";
 import LinkedinLogo from "./svg/LinkedinLogo";
 import styles from "../styles/profile.module.css";
 import { scrollToSection } from "@/utils/scroll";
+// import { useMediaQuery } from "react-responsive";
+
 
 const ProfileSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
+  // const isMobile = useMediaQuery({ query: "(max-width: 970px)" });
 
   const [startLineAnimation, setStartLineAnimation] = useState(false);
 
@@ -32,7 +35,7 @@ const ProfileSection = () => {
       >
         {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
         <motion.div
-          className={`relative mt-20 max-w-xl my-4 p-0.5 ${
+          className={`relative mt-20 max-w-xl my-4 p-0.5 max-[970px]:mt-14 ${
             isInView ? styles.descriptionContainer : ""
           }`}
           initial={{ opacity: 0 }}
@@ -93,7 +96,7 @@ const ProfileSection = () => {
         </motion.div>
 
         {/* Photo de profil */}
-        <div className="ml-24 flex justify-center items-center pt-16 relative">
+        <div className="ml-24 flex justify-center items-center pt-16 relative max-[970px]:pt-14">
           {/* Ligne animée entre le cadre et la photo */}
           <motion.div
             className="absolute left-[-96px] top-4/7 w-[30px] h-[2px] bg-orange-400"
@@ -102,7 +105,7 @@ const ProfileSection = () => {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
 
-          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 max-[1024px]:max-w-[250px] max-[1024px]:max-h-[300px]">
+          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 max-[1024px]:max-w-[250px] max-[1024px]:max-h-[300px] relative">
             <Image
               src="/img/photoProfile.jpg"
               alt="photoProfile"

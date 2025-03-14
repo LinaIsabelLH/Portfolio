@@ -20,7 +20,7 @@ const ContactSection = () => {
 
   return (
     <div className="z-10 flex flex-col w-full">
-      <div className=" z-10 relative flex w-full justify-center items-center mt-20">
+      <div className=" z-10 relative flex w-full justify-center items-center mt-20 max-[970px]:flex-wrap-reverse max-[970px]:mt-14">
         {/* Conteneur du texte avec la bordure animée */}
         <div
           className={`relative max-w-lg p-0.5 ${styles.descriptionContainer}`}
@@ -85,7 +85,7 @@ const ContactSection = () => {
             animate={{ width: "100px" }}
             transition={{ duration: 4, ease: "easeInOut", delay: 3 }}
           />
-          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400">
+          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 max-[1024px]:max-w-[250px] max-[1024px]:max-h-[300px] max-[970px]:mb-14">
             <Image
               src="/img/photoProfile.jpg"
               alt="photoProfile"
