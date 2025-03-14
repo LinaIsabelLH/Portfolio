@@ -7,7 +7,6 @@ import styles from "../styles/profile.module.css";
 import { scrollToSection } from "@/utils/scroll";
 // import { useMediaQuery } from "react-responsive";
 
-
 const ProfileSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
@@ -35,7 +34,7 @@ const ProfileSection = () => {
       >
         {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
         <motion.div
-          className={`relative mt-20 max-w-xl my-4 p-0.5 max-[970px]:mt-14 ${
+          className={`relative mt-20 max-w-xl my-4 p-0.5 max-[970px]:mt-0 ${
             isInView ? styles.descriptionContainer : ""
           }`}
           initial={{ opacity: 0 }}
@@ -96,10 +95,10 @@ const ProfileSection = () => {
         </motion.div>
 
         {/* Photo de profil */}
-        <div className="ml-24 flex justify-center items-center pt-16 relative max-[970px]:pt-14">
+        <div className="ml-24 flex justify-center items-center pt-16 relative max-[970px]:pt-14 max-[970px]:pb-14 max-[970px]:ml-0">
           {/* Ligne animée entre le cadre et la photo */}
           <motion.div
-            className="absolute left-[-96px] top-4/7 w-[30px] h-[2px] bg-orange-400"
+            className="absolute left-[-96px] top-[50%] w-[30px] h-[2px] bg-orange-400 max-[970px]:top-[86%] max-[970px]:left-[19px] "
             initial={{ width: 0 }}
             animate={{ width: startLineAnimation ? "100px" : 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
