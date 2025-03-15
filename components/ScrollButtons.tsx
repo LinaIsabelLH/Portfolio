@@ -1,13 +1,18 @@
 import Image from "next/image";
 import { scrollToSection } from "@/utils/scroll";
 
-const ScrollButtons = () => {
+interface ScrollButtonsProps {
+idSection: string;
+}
+
+const ScrollButtons: React.FC<ScrollButtonsProps> = ({idSection})=>{
+  
   return (
     <>
       <div className="flex w-[50%] justify-end self-center">
         <button
           className="text-3xl pt-4 animate-bounce cursor-pointer"
-          onClick={() => scrollToSection("portfolio")}
+          onClick={() => scrollToSection(idSection)}
         >
           <Image
             src="/img/arrowDown.png"

@@ -120,7 +120,7 @@ const MyProjects = () => {
         {projectModalJSX}
       </div>
       <div className="z-10 flex w-screen mt-22 justify-center">
-        <ScrollButtons/>
+        <ScrollButtons idSection="contact"/>
       </div>
     </div>
   );

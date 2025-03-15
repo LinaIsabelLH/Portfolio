@@ -118,7 +118,7 @@ const ProfileSection = () => {
           </div>
         </div>
         <div className="z-10 flex w-screen justify-center lg:mt-10 max-[1024]-mt-0">
-          <ScrollButtons />
+          <ScrollButtons idSection="competences"/>
         </div>
 
     </>

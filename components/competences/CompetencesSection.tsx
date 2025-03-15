@@ -77,7 +77,7 @@ const CompetencesSection = () => {
         </div>
       </div>
       <div className="z-10 flex w-screen mt-5 justify-center">
-        <ScrollButtons/>
+        <ScrollButtons idSection="portfolio"/>
       </div>
     </div>
   );
