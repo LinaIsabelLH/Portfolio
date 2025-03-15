@@ -32,6 +32,7 @@ const ScrollButtons: React.FC<ScrollButtonsProps> = ({idSection})=>{
             alt="arrow to return to home page"
             width={50}
             height={50}
+            className="max-[768px]:w-[40px] max-[768px]:h-[40px]"
           />
         </button>
       </div>

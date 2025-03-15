@@ -10,10 +10,10 @@ import ScrollButtons from "../ScrollButtons";
 
 const CompetencesSection = () => {
   return (
-    <div className="relative z-10 w-full pt-5 mt-10 ">
-      <div className="flex flex-row justify-evenly items-center w-full max-[768px]:w-[85vw] max-[640px]:justify-center">
+    <div className="relative z-10 w-full pt-5 mt-10 max-[800px]:mt-4 ">
+      <div className="flex flex-row justify-evenly items-center w-full max-[768px]:justify-center">
         <div
-          className="m-auto flex flex-col"
+          className="m-auto flex flex-col max-[800px]:m-0"
           data-aos="fade-up"
           data-aos-offset="100"
           data-aos-anchor-placement="top-bottom"
@@ -29,7 +29,7 @@ const CompetencesSection = () => {
         </div>
 
         <div
-          className="m-auto flex flex-col"
+          className="m-auto flex flex-col max-[800px]:m-0"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset="150"
@@ -44,7 +44,7 @@ const CompetencesSection = () => {
           </div>
         </div>
         <div
-          className="m-auto flex flex-col"
+          className="m-auto flex flex-col max-[800px]:m-0"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-offset="150"
@@ -68,7 +68,7 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[1263px]:mx-4">
+          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[1263px]:mx-4 max-[800px]:mb-2">
             <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl">
               Les technos que j&apos;ai travaillé
             </h3>
@@ -76,7 +76,7 @@ const CompetencesSection = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 flex w-screen mt-5 justify-center">
+      <div className="z-10 flex w-screen mt-5 justify-center max-[800px]:mt-0">
         <ScrollButtons idSection="portfolio"/>
       </div>
     </div>

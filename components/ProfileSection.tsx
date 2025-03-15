@@ -28,11 +28,11 @@ const ProfileSection = () => {
     <>
         <div
           ref={ref}
-          className="z-10 flex justify-center items-center relative max-[970px]:flex-wrap-reverse max-[1024px]:mx-4 h-[75%] min-[970px]:mt-12"
+          className="z-10 flex justify-center items-center relative h-[75%] min-w-full max-[970px]:flex-wrap-reverse max-[1024px]:mx-4 min-[970px]:mt-12 max-[800px]:mx-0"
         >
           {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
           <motion.div
-            className={`relative m-auto max-w-xl p-0.5 ${
+            className={`relative m-auto max-w-xl p-0.5 max-[800px]:mb-2 max-[800px]:mx-4 ${
               isInView ? styles.descriptionContainer : ""
             }`}
             initial={{ opacity: 0 }}
@@ -40,7 +40,7 @@ const ProfileSection = () => {
             transition={{ duration: 0.5 }}
           >
             {/* Contenu du texte */}
-            <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
+            <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[800px]:pb-4">
               <p>
                 Je suis une{" "}
                 <span className="font-bold text-orange-400">
@@ -69,13 +69,13 @@ const ProfileSection = () => {
                 , j’aime transformer les idées en solutions concrètes et
                 performantes, en explorant sans cesse de nouvelles technologies.
               </p>
-              <div className="flex justify-center">
+              <div className="flex justify-center ">
                 <a
                   href="https://www.linkedin.com/in/lina-isabel-londono-hidalgo/"
                   target="_blank"
                   aria-label="Linkedin link"
                   rel="noreferrer"
-                  className="my-4"
+                  className="my-4 max-[800px]:my-2"
                 >
                   <LinkedinLogo />
                 </a>
@@ -84,7 +84,7 @@ const ProfileSection = () => {
                   target="_blank"
                   aria-label="Github link"
                   rel="noreferrer"
-                  className="my-4 ml-10"
+                  className="my-4 ml-10 max-[800px]:my-2"
                 >
                   <GithubLogo />
                 </a>
@@ -93,7 +93,7 @@ const ProfileSection = () => {
           </motion.div>
 
           {/* Photo de profil */}
-          <div className="ml-24 flex justify-center items-center pt-auto relative max-[970px]:py-8 max-[970px]:mr-24">
+          <div className="ml-24 flex justify-center items-center pt-auto relative max-[970px]:py-8 max-[970px]:mr-24 max-[800px]:pt-4">
             {/* Ligne animée entre le cadre et la photo */}
             <motion.div
               className="absolute left-[-96px] top-[50%] bg-orange-400 max-[970px]:top-[90%] max-[970px]:left-[100px] "
