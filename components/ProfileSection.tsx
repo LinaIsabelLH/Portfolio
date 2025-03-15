@@ -28,7 +28,7 @@ const ProfileSection = () => {
     <>
         <div
           ref={ref}
-          className="z-10 flex justify-center items-center relative max-[970px]:flex-wrap-reverse max-[1024px]:mx-4 h-[75%] max-[970px]:mt-60"
+          className="z-10 flex justify-center items-center relative max-[970px]:flex-wrap-reverse max-[1024px]:mx-4 h-[75%] min-[970px]:mt-12"
         >
           {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
           <motion.div

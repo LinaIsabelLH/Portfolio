@@ -34,7 +34,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`relative w-screen h-screen overflow-x-hidden flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat pt-24 max-[1100px]:pt-10 ${
+      className={`relative w-screen min-h-screen flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat pt-24 max-[1100px]:pt-10  max-[425px]:object-contain ${
         bgImage ? "" : "bg-stone-900"
       }`}
       style={{

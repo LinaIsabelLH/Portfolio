@@ -10,7 +10,7 @@ import ScrollButtons from "../ScrollButtons";
 
 const CompetencesSection = () => {
   return (
-    <div className="relative z-10 w-full pt-5 mt-10">
+    <div className="relative z-10 w-full pt-5 mt-10 ">
       <div className="flex flex-row justify-evenly items-center w-full max-[768px]:w-[85vw] max-[640px]:justify-center">
         <div
           className="m-auto flex flex-col"
@@ -20,8 +20,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl">
-            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">
+          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[1263px]:mx-4">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl">
               FrontEnd
             </h3>
             <CompetencesStack competences={frontCompetences} />
@@ -36,8 +36,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl">
-            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">
+          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[1263px]:mx-2">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl">
               BackEnd
             </h3>
             <CompetencesStack competences={backCompetences} />
@@ -51,8 +51,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl">
-            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">
+          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[1263px]:ml-2 max-[1263px]:mr-4">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl">
               Les outils que j&apos;utilise
             </h3>
             <CompetencesStack competences={toolsCompetences} />
@@ -68,8 +68,8 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl">
-            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0">
+          <div className="relative flex flex-col mb-10 pt-5 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[1263px]:mx-4">
+            <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl">
               Les technos que j&apos;ai travaillé
             </h3>
             <CompetencesStack competences={technoCompetences} />
