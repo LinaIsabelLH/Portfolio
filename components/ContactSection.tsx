@@ -20,7 +20,7 @@ const ContactSection = () => {
 
   return (
     <div className="z-10 flex flex-col w-full">
-      <div className=" z-10 relative flex w-full justify-center items-center mt-20 max-[970px]:flex-wrap-reverse max-[970px]:mt-14">
+      <div className=" z-10 relative flex w-full justify-center items-center mt-20 max-[970px]:flex-wrap-reverse max-[970px]:mt-14 max-[768px]:mt-4 max-[545px]:max-w-[90%] max-[545px]:mx-auto">
         {/* Conteneur du texte avec la bordure animée */}
         <div
           className={`relative max-w-lg p-0.5 ${styles.descriptionContainer}`}
@@ -33,19 +33,19 @@ const ContactSection = () => {
           {/* Contenu du texte */}
 
           <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[970px]:text-center max-[800px]:pb-4 max-[490px]:pb-2 max-[490px]:pt-4 max-[460px]:px-2">
-            <h2 className="text-3xl font-bold text-center mb-8">
+            <h2 className="text-3xl font-bold text-center mb-8 max-[500px]:text-2xl max-[400px]:text-xl">
               Envie de me contacter?
             </h2>
-            <h3 className="font-bold text-2xl">Lina Isabel Londono Hidalgo</h3>
-            <p className="pt-2 pb-2 text-xl">
+            <h3 className="font-bold text-2xl max-[500px]:text-xl max-[400px]:text-lg">Lina Isabel Londono Hidalgo</h3>
+            <p className="pt-2 pb-2 text-xl max-[500px]:text-lg max-[400px]:text-base max-[340px]:text-sm">
               <span className="font-semibold">Téléphone: </span>
               <a href="tel:+33751623618" className="hover:underline">
                 +33 (0)7 51 62 36 18
               </a>
             </p>
 
-            <div className="flex text-xl mb-8 max-[970px]:justify-center">
-              <p className="text-xl mr-1">
+            <div className="flex text-xl mb-8 max-[970px]:justify-center max-[500px]:text-lg max-[400px]:text-base max-[340px]:text-sm">
+              <p className="text-xl mr-1 max-[500px]:text-lg max-[400px]:text-base max-[340px]:text-sm">
                 <span className="font-semibold">E-mail: </span>{" "}
                 <a
                   href="mailto:londonohidalgo@gmail.com"
@@ -70,7 +70,7 @@ const ContactSection = () => {
                 />
               </svg>
             </div>
-            <p className="text-xl pb-2">
+            <p className="text-xl pb-2 max-[500px]:text-lg max-[400px]:text-base max-[340px]:text-sm">
               Je serai ravie d&apos;échanger sur la manière dont je pourrais
               contribuer à la réussite des vos ambitions!
             </p>
@@ -97,10 +97,10 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 flex w-screen mt-20 justify-end">
-        <div className="flex w-[50%] justify-end self-center">
+      <div className="z-10 flex w-screen mt-20 justify-end max-[550px]:justify-center">
+        <div className="flex w-[50%] justify-end self-center max-[550px]:justify-center">
           <button
-            className="text-3xl mt-0 pr-25 cursor-pointer"
+            className="text-3xl mt-0 pr-25 cursor-pointer max-[550px]:pr-0"
             onClick={() => scrollToSection("home")}
           >
             <Image
