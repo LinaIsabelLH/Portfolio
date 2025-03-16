@@ -32,7 +32,7 @@ const ContactSection = () => {
         >
           {/* Contenu du texte */}
 
-          <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl">
+          <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[970px]:text-center max-[800px]:pb-4 max-[490px]:pb-2 max-[490px]:pt-4 max-[460px]:px-2">
             <h2 className="text-3xl font-bold text-center mb-8">
               Envie de me contacter?
             </h2>
@@ -44,7 +44,7 @@ const ContactSection = () => {
               </a>
             </p>
 
-            <div className="flex text-xl mb-8">
+            <div className="flex text-xl mb-8 max-[970px]:justify-center">
               <p className="text-xl mr-1">
                 <span className="font-semibold">E-mail: </span>{" "}
                 <a
@@ -77,15 +77,15 @@ const ContactSection = () => {
           </div>
         </div>
         {/* Photo de profil */}
-        <div className="ml-24 flex justify-center items-center relative">
+        <div className="ml-24 flex justify-center items-center pt-auto relative max-[970px]:py-8 max-[970px]:mr-24 max-[800px]:pt-4">
           {/* Ligne animée entre le cadre et la photo */}
           <motion.div
-            className="absolute left-[-96px] w-[30px] h-[2px] bg-orange-400"
+            className="absolute left-[-96px] top-[50%] bg-orange-400 max-[970px]:top-[90%] max-[970px]:left-[100px] max-[800px]:top-[89.2%] max-[400px]:top-[84%] max-[400px]:left-[60px]"
             initial={{ width: 0 }}
             animate={{ width: "100px" }}
             transition={{ duration: 4, ease: "easeInOut", delay: 3 }}
           />
-          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 max-[1024px]:max-w-[250px] max-[1024px]:max-h-[300px] max-[970px]:mb-14">
+          <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 relative max-[1024px]:w-[200px] max-[1024px]:h-[250px] lg:m-auto max-[400px]:w-[125px] max-[400px]:h-[150px]">
             <Image
               src="/img/photoProfile.jpg"
               alt="photoProfile"

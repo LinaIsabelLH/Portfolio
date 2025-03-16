@@ -112,7 +112,7 @@ const ProfileSection = () => {
                 title="photoProfile"
                 width={400}
                 height={400}
-                className="rounded-4xl border border-orange-400  "
+                className="rounded-4xl border border-orange-400"
               />
             </div>
           </div>
