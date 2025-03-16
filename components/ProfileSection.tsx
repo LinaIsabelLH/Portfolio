@@ -32,7 +32,7 @@ const ProfileSection = () => {
         >
           {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
           <motion.div
-            className={`relative max-w-xl p-0.5 max-[800px]:mb-2 max-[800px]:mx-4 ${
+            className={`relative max-w-xl p-0.5 max-[800px]:mb-2 max-[800px]:mx-4 max-[460px]:mx-2 ${
               isInView ? styles.descriptionContainer : ""
             }`}
             initial={{ opacity: 0 }}
@@ -40,7 +40,7 @@ const ProfileSection = () => {
             transition={{ duration: 0.5 }}
           >
             {/* Contenu du texte */}
-            <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[800px]:pb-4 max-[490px]:pb-2max-[490px]:pt-4">
+            <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[800px]:pb-4 max-[490px]:pb-2 max-[490px]:pt-4 max-[460px]:px-2 max-[400px]:text-sm">
               <p>
                 Je suis une{" "}
                 <span className="font-bold text-orange-400">
@@ -96,7 +96,7 @@ const ProfileSection = () => {
           <div className="ml-24 flex justify-center items-center pt-auto relative max-[970px]:py-8 max-[970px]:mr-24 max-[800px]:pt-4">
             {/* Ligne animée entre le cadre et la photo */}
             <motion.div
-              className="absolute left-[-96px] top-[50%] bg-orange-400 max-[970px]:top-[90%] max-[970px]:left-[100px] max-[800px]:top-[89.2%] "
+              className="absolute left-[-96px] top-[50%] bg-orange-400 max-[970px]:top-[90%] max-[970px]:left-[100px] max-[800px]:top-[89.2%] max-[400px]:top-[84%] max-[400px]:left-[60px] "
               initial={{ width: 0, height: 0 }}
               animate={{
                 width: startLineAnimation && !isMobile ? "100px" : "2px",
@@ -105,7 +105,7 @@ const ProfileSection = () => {
               transition={{ duration: 2.7, ease: "easeInOut" }}
             />
 
-            <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 relative max-[1024px]:w-[200px] max-[1024px]:h-[250px] lg:m-auto">
+            <div className="w-80 h-100 overflow-hidden rounded-[50%] border-2 border-orange-400 relative max-[1024px]:w-[200px] max-[1024px]:h-[250px] lg:m-auto max-[400px]:w-[125px] max-[400px]:h-[150px]">
               <Image
                 src="/img/photoProfile.jpg"
                 alt="photoProfile"

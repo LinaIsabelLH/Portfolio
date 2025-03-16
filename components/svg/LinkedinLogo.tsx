@@ -6,7 +6,7 @@ const LinkedinLogo = () => {
       xmlns="http://www.w3.org/2000/svg"
       fill="#ff7043"
       viewBox="0 0 70 70"
-      className="h-[70px] w-[70px] transition-transform duration-250 hover:scale-110 cursor-pointer"
+      className="h-[70px] w-[70px] transition-transform duration-250 hover:scale-110 cursor-pointer max-[800px]:h-[55px] max-[800px]:w-[55px] max-[460px]:h-[40px] max-[460px]:w-[40px]"
     >
       <title>Linkedin SVG</title>
       <g clipPath="url(#clip0_1_19)">
