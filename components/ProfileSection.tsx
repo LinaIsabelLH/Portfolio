@@ -32,7 +32,7 @@ const ProfileSection = () => {
         >
           {/* Conteneur du texte animmé avec motion, et la bordure animée avec css animation */}
           <motion.div
-            className={`relative m-auto max-w-xl p-0.5 max-[800px]:mb-2 max-[800px]:mx-4 ${
+            className={`relative max-w-xl p-0.5 max-[800px]:mb-2 max-[800px]:mx-4 ${
               isInView ? styles.descriptionContainer : ""
             }`}
             initial={{ opacity: 0 }}
@@ -40,7 +40,7 @@ const ProfileSection = () => {
             transition={{ duration: 0.5 }}
           >
             {/* Contenu du texte */}
-            <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[800px]:pb-4">
+            <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[800px]:pb-4 max-[490px]:pb-2max-[490px]:pt-4">
               <p>
                 Je suis une{" "}
                 <span className="font-bold text-orange-400">
@@ -96,7 +96,7 @@ const ProfileSection = () => {
           <div className="ml-24 flex justify-center items-center pt-auto relative max-[970px]:py-8 max-[970px]:mr-24 max-[800px]:pt-4">
             {/* Ligne animée entre le cadre et la photo */}
             <motion.div
-              className="absolute left-[-96px] top-[50%] bg-orange-400 max-[970px]:top-[90%] max-[970px]:left-[100px] "
+              className="absolute left-[-96px] top-[50%] bg-orange-400 max-[970px]:top-[90%] max-[970px]:left-[100px] max-[800px]:top-[89.2%] "
               initial={{ width: 0, height: 0 }}
               animate={{
                 width: startLineAnimation && !isMobile ? "100px" : "2px",
