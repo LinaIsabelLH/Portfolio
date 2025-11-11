@@ -24,8 +24,20 @@ export const backCompetences: CompetenceType[] = [
     svg: <NodeLogo />,
   },
   {
+    name: "Django",
+    img: "/img/competences/djangoLogo.png",
+  },
+  {
     name: "MongoDB",
     img: "/img/competences/mongodbLogo.png",
+  },
+  {
+    name: "Postgresql",
+    img: "/img/competences/psqlLogo.png",
+  },
+  {
+    name: "Sql",
+    img: "/img/competences/sqlLogo.png",
   },
 ];
 
@@ -39,12 +51,12 @@ export const technoCompetences: CompetenceType[] = [
     img: "/img/competences/reduxLogo.png",
   },
   {
-    name: "SEO",
-    img: "/img/competences/seoLogo.png",
-  },
-  {
     name: "TypeScript",
     img: "/img/competences/typescriptLogo.png",
+  },
+  {
+    name: "Vite",
+    img: "/img/competences/viteLogo.png",
   },
   {
     name: "Eslint",
@@ -54,9 +66,25 @@ export const technoCompetences: CompetenceType[] = [
     name: "Jest",
     img: "/img/competences/jestLogo.png",
   },
+  {
+    name: "SEO",
+    img: "/img/competences/seoLogo.png",
+  },
 ];
 
 export const toolsCompetences: CompetenceType[] = [
+  {
+    name: "Figma",
+    img: "/img/competences/figmaLogo.png",
+  },
+  {
+    name: "Postman",
+    img: "/img/competences/postmanLogo.png",
+  },
+  {
+    name: "Compass",
+    img: "/img/competences/compassLogo.png",
+  },
   {
     name: "Git",
     img: "/img/competences/gitLogo.png",
@@ -66,7 +94,7 @@ export const toolsCompetences: CompetenceType[] = [
     img: "/img/competences/netlifyLogo.png",
   },
   {
-    name: "Figma",
-    img: "/img/competences/figmaLogo.png",
+    name: "Vercel",
+    img: "/img/competences/vercelLogo.png",
   },
 ];
