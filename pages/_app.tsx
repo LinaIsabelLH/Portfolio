@@ -12,7 +12,7 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   }, []);
   return (
     <LocaleProvider>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </LocaleProvider>
   );
 };

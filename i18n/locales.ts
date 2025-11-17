@@ -94,3 +94,6 @@ export const locales = {
     },
   },
 };
+
+export type LocaleKey = keyof typeof locales;
+export type LocaleContent = typeof locales.fr;
