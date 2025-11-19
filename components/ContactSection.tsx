@@ -3,9 +3,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import styles from "../styles/profile.module.css";
 import { scrollToSection } from "@/utils/scroll";
+import { useLocale } from "@/i18n/useLocale";
 
 const ContactSection = () => {
   const email = "londonohidalgo@gmail.com";
+  const {t} = useLocale();
 
   const handleCopyEmail = () => {
     navigator.clipboard
@@ -34,11 +36,11 @@ const ContactSection = () => {
 
           <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[970px]:text-center max-[800px]:pb-4 max-[490px]:pb-2 max-[490px]:pt-4 max-[460px]:px-2">
             <h2 className="text-3xl font-bold text-center mb-8 max-[500px]:text-2xl max-[400px]:text-xl">
-              Envie de me contacter?
+            {t.contact.subtitle}
             </h2>
             <h3 className="font-bold text-2xl max-[500px]:text-xl max-[400px]:text-lg">Lina Isabel Londono Hidalgo</h3>
             <p className="pt-2 pb-2 text-xl max-[500px]:text-lg max-[400px]:text-base max-[340px]:text-sm">
-              <span className="font-semibold">Téléphone: </span>
+              <span className="font-semibold">{t.contact.phone}: </span>
               <a href="tel:+33751623618" className="hover:underline">
                 +33 (0)7 51 62 36 18
               </a>
@@ -71,8 +73,7 @@ const ContactSection = () => {
               </svg>
             </div>
             <p className="text-xl pb-2 max-[500px]:text-lg max-[400px]:text-base max-[340px]:text-sm">
-              Je serai ravie d&apos;échanger sur la manière dont je pourrais
-              contribuer à la réussite des vos ambitions!
+            {t.contact.message}
             </p>
           </div>
         </div>

@@ -3,9 +3,11 @@ import { Link } from "react-scroll";
 import CVDownloadBtn from "./CVDownloadBtn";
 import Image from "next/image";
 import LanguageSwitcher from "./LangageSwitcher";
+import { useLocale } from "../i18n/useLocale";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useLocale();
 
   return (
     <header className="fixed flex-auto bg-slate-800 text-zinc-100 p-4 w-full top-0 z-50 border-b border-orange-400">
@@ -13,19 +15,19 @@ const Header = () => {
         <LanguageSwitcher/>
         <div className="hidden lg:flex space-x-16 items-center cursor-pointer ">
           <Link to="home" smooth={true} duration={500}>
-            Accueil
+          {t.header.home}
           </Link>
           <Link to="profil" smooth={true} duration={500}>
-            Profil
+          {t.header.profil}
           </Link>
           <Link to="competences" smooth={true} duration={500}>
-            Compétences
+          {t.header.skills}
           </Link>
           <Link to="portfolio" smooth={true} duration={500}>
-            Portfolio
+          {t.header.portfolio}
           </Link>
           <Link to="contact" smooth={true} duration={500}>
-            Contact
+          {t.header.contact}
           </Link>
           <CVDownloadBtn />
         </div>
@@ -51,7 +53,7 @@ const Header = () => {
               duration={500}
               onClick={() => setMenuOpen(false)}
             >
-              Accueil
+              {t.header.home}
             </Link>
             <Link
               to="profil"
@@ -59,7 +61,7 @@ const Header = () => {
               duration={500}
               onClick={() => setMenuOpen(false)}
             >
-              Profil
+              {t.header.profil}
             </Link>
             <Link
               to="competences"
@@ -67,7 +69,7 @@ const Header = () => {
               duration={500}
               onClick={() => setMenuOpen(false)}
             >
-              Compétences
+              {t.header.skills}
             </Link>
             <Link
               to="portfolio"
@@ -75,7 +77,7 @@ const Header = () => {
               duration={500}
               onClick={() => setMenuOpen(false)}
             >
-              Portfolio
+              {t.header.portfolio}
             </Link>
             <Link
               to="contact"
@@ -83,7 +85,7 @@ const Header = () => {
               duration={500}
               onClick={() => setMenuOpen(false)}
             >
-              Contact
+              {t.header.contact}
             </Link>
             <CVDownloadBtn />
           </div>

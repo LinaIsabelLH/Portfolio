@@ -18,7 +18,9 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     t: locales[locale],
   };
 
-  return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
+  return (
+    <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>
+  );
 }
 
 export function useLocale() {

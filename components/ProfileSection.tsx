@@ -6,6 +6,7 @@ import LinkedinLogo from "./svg/LinkedinLogo";
 import styles from "../styles/profile.module.css";
 import { useMediaQuery } from "react-responsive";
 import ScrollButtons from "./ScrollButtons";
+import { useLocale } from "@/i18n/useLocale";
 
 const ProfileSection = () => {
   const ref = useRef(null);
@@ -13,6 +14,7 @@ const ProfileSection = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 970px)" });
 
   const [startLineAnimation, setStartLineAnimation] = useState(false);
+  const {t} = useLocale();
 
   // Déclenche l'animation de la ligne après que la bordure soit animée
   useEffect(() => {
@@ -42,32 +44,25 @@ const ProfileSection = () => {
             {/* Contenu du texte */}
             <div className="relative bg-slate-800 text-zinc-100 p-6 rounded-4xl max-[800px]:pb-4 max-[490px]:pb-2 max-[490px]:pt-4 max-[460px]:px-2 max-[400px]:text-sm">
               <p>
-                Je suis une{" "}
+                {t.hero.description}
                 <span className="font-bold text-orange-400">
-                  Développeuse Fullstack
+                {t.hero.poste}
                 </span>{" "}
-                passionnée par la{" "}
+                {t.hero.description1}
                 <span className="font-bold">
-                  création d&apos;applications web et mobiles
+                {t.hero.description2}
                 </span>{" "}
-                innovantes qui apportent une réelle valeur aux entreprises.
-                Originaire de Colombie, j’ai choisi la France il y a 10 ans pour
-                y étudier, et j’y ai construit ma carrière et ma vie.
+                {t.hero.description3}
               </p>
               <p className="py-3">
-                Après un parcours riche dans le commerce et la banque, où j’ai
-                développé mon <span className="font-bold">adaptabilité </span>et
-                mon <span className="font-bold">sens relationnel</span>, j’ai
-                décidé en 2024 de me consacrer pleinement au Développement
-                Fullstack, séduite par son potentiel d’innovation et d’
-                <span className="font-bold">apprentissage continu</span>.
+              {t.hero.description4} <span className="font-bold">{t.hero.description5}</span>{t.hero.description6} <span className="font-bold">{t.hero.description7}</span>{t.hero.description8}
+                <span className="font-bold">{t.hero.description9}</span>
               </p>
               <p>
                 <span className="font-bold">
-                  Curieuse, rigoureuse et avide de défis
+                {t.hero.description10}
                 </span>
-                , j’aime transformer les idées en solutions concrètes et
-                performantes, en explorant sans cesse de nouvelles technologies.
+                {t.hero.description11}
               </p>
               <div className="flex justify-center ">
                 <a

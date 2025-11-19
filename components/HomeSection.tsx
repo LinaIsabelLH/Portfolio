@@ -1,7 +1,9 @@
 import React from "react";
 import { scrollToSection } from "@/utils/scroll";
+import { useLocale } from "@/i18n/useLocale";
 
 const HomeSection = () => {
+  const {t} = useLocale();
   
   return (
     <section
@@ -20,22 +22,20 @@ const HomeSection = () => {
       >
         <div className="z-10 font-body text-zinc-100 max-[768px]:mx-4">
           <h2 className="font-extrabold text-5xl mt-60 max-[768px]:text-2xl">
-            Bonjour et Bienvenu(e)!
+          {t.home.greet}
           </h2>
           <h3 className="font-medium text-2xl mt-11 max-[768px]:text-lg ">
-            Je suis{" "}
+          {t.home.intro}
             <span className="font-bold text-3xl max-[768px]:text-xl">
-              Lina Isabel, Développeuse Fullstack
-            </span>{" "}
-            en pleine évolution.
+            {t.home.intro1}
+            </span> {t.home.intro2}
           </h3>
           <p className="font-medium text-2xl mt-2 max-[768px]:text-lg">
-            {" "}
-            J&apos;adore coder, apprendre et créer des applications modernes!
+          {t.home.intro3}
           </p>
-          <p className="mt-16 text-2xl font-medium max-[768px]:text-lg max-[376px]:mt-4">Curieux(se)?</p>
+          <p className="mt-16 text-2xl font-medium max-[768px]:text-lg max-[376px]:mt-4">{t.home.intro4}</p>
           <p className="mt-2 text-2xl font-medium max-[768px]:text-lg">
-            Découvre mon profil et mes realisations!
+          {t.home.intro5}
           </p>
           <p
             className="mt-2 text-3xl animate-bounce cursor-pointer"
