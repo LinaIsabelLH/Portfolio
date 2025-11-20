@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Button } from "react-bootstrap";
 
 import MyProjectsData from "../data/MyProjectsData";
+import { useLocale } from "@/i18n/useLocale";
+
 
 import DetailsProject from "./DetailsProject";
 import ProjectLink from "./ProjectButtonLink";
@@ -12,6 +14,7 @@ import { type ProjectType } from "../../types/types";
 import ScrollButtons from "../ScrollButtons";
 
 const MyProjects = () => {
+  const { t } = useLocale();
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
     null
   );
@@ -63,7 +66,7 @@ const MyProjects = () => {
                   {data.github &&
                     (data.github === "Non disponible" ? (
                       <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-gray-500 cursor-not-allowed">
-                        Github privé
+                        {t.buttons.githubPrivate}
                       </h4>
                     ) : (
                       <a
@@ -71,7 +74,7 @@ const MyProjects = () => {
                         target="blank"
                         className="no-underline bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer hover:text-orange-400"
                       >
-                        <h4>Voir le Github</h4>
+                        <h4>{t.buttons.viewGithub}</h4>
                       </a>
                     ))}
                   {data.githubs &&
@@ -91,7 +94,7 @@ const MyProjects = () => {
                     onClick={() => openModal(data)}
                     className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer hover:text-orange-400"
                   >
-                    <h4>Détails</h4>
+                    <h4>{t.buttons.details}</h4>
                   </Button>
                 </div>
               </div>
@@ -120,7 +123,7 @@ const MyProjects = () => {
         {projectModalJSX}
       </div>
       <div className="z-10 flex w-screen mt-22 justify-center">
-        <ScrollButtons idSection="contact"/>
+        <ScrollButtons idSection="contact" />
       </div>
     </div>
   );

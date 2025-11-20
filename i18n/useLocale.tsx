@@ -15,7 +15,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   const value = {
     locale,
     setLocale,
-    t: locales[locale],
+    t: locales[locale] as LocaleContent,
   };
 
   return (

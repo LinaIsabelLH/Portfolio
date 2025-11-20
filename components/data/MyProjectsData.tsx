@@ -1,6 +1,6 @@
-import { type ProjectType } from "../../types/types";
+import { ProjectType } from "../../types/types";
 
-const MyProjectsList: ProjectType[] = [
+const MyProjectsList: ProjectType[]  = [
   {
     title: "WeFood App",
     img: "/img/projects/WeFoodApp.png",

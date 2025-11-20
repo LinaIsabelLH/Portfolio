@@ -36,6 +36,32 @@ export const locales = {
       description11:
         ", j’aime transformer les idées en solutions concrètes et performantes, en explorant sans cesse de nouvelles technologies.",
     },
+    skills: {
+      title: "Mes Compétences",
+
+    },
+    project: {
+      titleSection: "Mes projets",
+    },
+    projects: {
+      wefood: {
+        title: "WeFood App",
+        desc1:
+          "WeFood est une application mobile en React Native et Node.js...",
+        github: "Non disponible",
+      },
+      portfolio: {
+        title: "Mon Portfolio",
+        desc1:
+          "Portfolio moderne et performant conçu pour valoriser mes projets...",
+        github: "https://github.com/LinaIsabelLH/Portfolio.git",
+      },
+    },
+    buttons: {
+      details: "Détails",
+      githubPrivate: "Github privé",
+      viewGithub: "Voir le Github",
+    },
     contact: {
       title: "Contact",
       subtitle: "Envie de me contacter?",
@@ -83,6 +109,32 @@ export const locales = {
       description11:
         ", I love turning ideas into concrete and performing solutions while constantly exploring new technologies.",
     },
+    skills: {
+      title: "Skills",
+
+    },
+    project: {
+      titleSection: "My projects",
+    },
+    projects: {
+      wefood: {
+        title: "WeFood App",
+        desc1:
+          "WeFood is a mobile app built with React Native and Node.js...",
+        github: "Not available",
+      },
+      portfolio: {
+        title: "My Portfolio",
+        desc1:
+          "Modern, high-performance portfolio designed to highlight my work...",
+        github: "https://github.com/LinaIsabelLH/Portfolio.git",
+      },
+    },
+    buttons: {
+      details: "Details",
+      githubPrivate: "Private Github",
+      viewGithub: "View Github",
+    },
 
     contact: {
       title: "Contact",
@@ -96,4 +148,8 @@ export const locales = {
 };
 
 export type LocaleKey = keyof typeof locales;
-export type LocaleContent = typeof locales.fr;
+//export type LocaleContent = typeof locales.fr;
+export type LocaleContent = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any; // ⭐ autorise t["projects.wefood.desc1"]
+};

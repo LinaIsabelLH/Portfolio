@@ -3,6 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import Image from "next/image";
 
 import ProjectLink from "./ProjectButtonLink";
+import { useLocale } from "@/i18n/useLocale";
 
 import { type ProjectType } from "../../types/types";
 
@@ -14,6 +15,7 @@ type Props = {
 };
 
 const DetailsProject = (props: Props) => {
+  const { t } = useLocale();
   const { closeModal, imageUrl, selectedProject, showModal } = props;
 
   const { stacks } = selectedProject;
@@ -38,9 +40,9 @@ const DetailsProject = (props: Props) => {
           />
           {/* projectlinksContainer */}
           <div className="flex items-center gap-2.5 flex-wrap justify-center w-full text-center">
-            {selectedProject.descriptions.map((description) => (
-              <p key={description} className="mb-2.5 text-lg">
-                {description}
+            {selectedProject.descriptions.map((descriptionKey) => (
+              <p key={descriptionKey} className="mb-2.5 text-lg">
+                {t[descriptionKey]}
               </p>
             ))}
             <div className="absolute bottom-0 left-[10%] w-[80%] border-b-2 border-gray-600 rounded-sm"></div>
