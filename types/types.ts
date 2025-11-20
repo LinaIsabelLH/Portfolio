@@ -15,7 +15,7 @@ export type CompetenceType = {
     descriptions: string[];
     video?: string | null;
     link: string | null;
-    github?: string;
+    github?: string | null;
     githubs?: { title: string, link: string }[];
     gif?: string;
     stacks: string[];

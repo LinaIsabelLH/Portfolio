@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
 import Image from "next/image";
-
 import ProjectLink from "./ProjectButtonLink";
 import { useLocale } from "@/i18n/useLocale";
 
@@ -15,10 +14,10 @@ type Props = {
 };
 
 const DetailsProject = (props: Props) => {
-  const { t } = useLocale();
   const { closeModal, imageUrl, selectedProject, showModal } = props;
 
   const { stacks } = selectedProject;
+  const {t} = useLocale();
 
   return (
     <Modal
@@ -40,9 +39,9 @@ const DetailsProject = (props: Props) => {
           />
           {/* projectlinksContainer */}
           <div className="flex items-center gap-2.5 flex-wrap justify-center w-full text-center">
-            {selectedProject.descriptions.map((descriptionKey) => (
-              <p key={descriptionKey} className="mb-2.5 text-lg">
-                {t[descriptionKey]}
+            {selectedProject.descriptions.map((desc) => (
+              <p key={desc} className="mb-2.5 text-lg">
+                {desc}
               </p>
             ))}
             <div className="absolute bottom-0 left-[10%] w-[80%] border-b-2 border-gray-600 rounded-sm"></div>
@@ -75,7 +74,7 @@ const DetailsProject = (props: Props) => {
             {selectedProject.github &&
               (selectedProject.github === "Non disponible" ? (
                 <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] py-2 flex items-center justify-center px-4 text-gray-500 cursor-not-allowed font-bold">
-                  Github privé
+                  {t.buttons.githubPrivate}
                 </h4>
               ) : (
                 <a
@@ -83,7 +82,7 @@ const DetailsProject = (props: Props) => {
                   target="blank"
                   className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 py-2 cursor-pointer hover:text-orange-400"
                 >
-                  <h4 className="font-bold">Voir le Github</h4>
+                  <h4 className="font-bold">{t.buttons.viewGithub}</h4>
                 </a>
               ))}
             {selectedProject.githubs &&
@@ -105,7 +104,7 @@ const DetailsProject = (props: Props) => {
               onClick={closeModal}
               className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 py-2 cursor-pointer hover:text-orange-400"
             >
-              <h4 className="font-bold">Retourner aux projets</h4>
+              <h4 className="font-bold">{t.buttons.back}</h4>
             </button>
           </div>
           {/* Bouton de fermeture */}

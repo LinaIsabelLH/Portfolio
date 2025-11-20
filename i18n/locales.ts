@@ -47,13 +47,13 @@ export const locales = {
       wefood: {
         title: "WeFood App",
         desc1:
-          "WeFood est une application mobile en React Native et Node.js...",
+          "WeFood est une application mobile en React Native et Node.js, connectant les utilisateurs à des restaurants selon leurs préférences. L'application intègre MongoDB pour la gestion des données, la géolocalisation, des filtres dynamiques, l'intégration d'APIs externes (Google Maps), ainsi qu’un système de suivi (follow) et une certification “Recommandé par les locaux” pour valoriser les avis d’utilisateurs de la même nationalité.",
         github: "Non disponible",
       },
       portfolio: {
         title: "Mon Portfolio",
         desc1:
-          "Portfolio moderne et performant conçu pour valoriser mes projets...",
+          "Portfolio moderne et performant, conçu pour valoriser mes projets et compétences en développement web. Développé avec Next.js (SSR/SSG) pour des performances optimales et un bon référencement, il intègre TypeScript pour un code fiable et maintenable. L'expérience utilisateur est enrichie par des animations fluides avec AOS et Framer Motion, tandis que Tailwind CSS assure un design épuré et responsive",
         github: "https://github.com/LinaIsabelLH/Portfolio.git",
       },
     },
@@ -61,6 +61,8 @@ export const locales = {
       details: "Détails",
       githubPrivate: "Github privé",
       viewGithub: "Voir le Github",
+      viewVideo: "Vidéo Démo",
+      back: "Retourner aux projets"
     },
     contact: {
       title: "Contact",
@@ -120,20 +122,22 @@ export const locales = {
       wefood: {
         title: "WeFood App",
         desc1:
-          "WeFood is a mobile app built with React Native and Node.js...",
+          "WeFood is a React Native and Node.js mobile app that connects users to restaurants tailored to their tastes. It features MongoDB-powered data management, geolocation, dynamic filters, external API integration (Google Maps), a social follow system, and a “Recommended by Locals” badge to highlight reviews from users of the same nationality.",
         github: "Not available",
       },
       portfolio: {
         title: "My Portfolio",
         desc1:
-          "Modern, high-performance portfolio designed to highlight my work...",
+          "A sleek, high-performance portfolio designed to showcase my web development projects and expertise. Built with Next.js (SSR/SSG) for speed and SEO, and TypeScript for robust, maintainable code. Enhanced with smooth animations via AOS and Framer Motion, and styled with Tailwind CSS for a modern, responsive design.",
         github: "https://github.com/LinaIsabelLH/Portfolio.git",
       },
-    },
+    },    
     buttons: {
       details: "Details",
       githubPrivate: "Private Github",
       viewGithub: "View Github",
+      viewVideo: "Demo video",
+      back: "Back to the projects"
     },
 
     contact: {

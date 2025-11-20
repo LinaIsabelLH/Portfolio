@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import { Button } from "react-bootstrap";
 
-import MyProjectsData from "../data/MyProjectsData";
+import { useProjectsData } from "../data/useProjectsData";
 import { useLocale } from "@/i18n/useLocale";
 
 
@@ -15,6 +15,7 @@ import ScrollButtons from "../ScrollButtons";
 
 const MyProjects = () => {
   const { t } = useLocale();
+  const MyProjectsData = useProjectsData();
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
     null
   );
