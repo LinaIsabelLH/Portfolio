@@ -12,7 +12,7 @@ export const useProjectsData =(): ProjectType[]  => {
       descriptions: [
         t.projects.wefood.desc1,
       ],
-      video: "https://www.canva.com/design/DAGhCE6qPPI/W0UOTKDqDwHvrt0SXbVD4A/watch",
+      video: "/img/projects/WeFoodGif.GIF",
       link: null,
       github: null, 
       stacks: ["react", "next", "api", "node"],
