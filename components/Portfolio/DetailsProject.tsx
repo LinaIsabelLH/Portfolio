@@ -48,7 +48,7 @@ const DetailsProject = (props: Props) => {
           </div>
           {/* Stacks utilisés */}
           <h4 className="font-semibold text-center text-lg pt-3 px-2.5">
-            Récapitulatif des compétences utilisées pour ce projet :{" "}
+            {t.buttons.stackList}
           </h4>
           <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] flex flex-wrap gap-2.5 justify-center w-full">
             {stacks.map((stack, index) => (

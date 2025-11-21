@@ -62,6 +62,8 @@ export const locales = {
       githubPrivate: "Github privé",
       viewGithub: "Voir le Github",
       viewVideo: "Vidéo Démo",
+      typeProject : "Projet Local",  // or "Visit site" if deployed
+      stackList : "Tech Stack",
       back: "Retourner aux projets"
     },
     contact: {
@@ -137,7 +139,9 @@ export const locales = {
       githubPrivate: "Private Github",
       viewGithub: "View Github",
       viewVideo: "Demo video",
-      back: "Back to the projects"
+      typeProject : "Local Project",
+      stackList : "Tech Stack",
+      back: "Back to the projects",
     },
 
     contact: {

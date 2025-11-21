@@ -13,7 +13,7 @@ export const useProjectsData =(): ProjectType[]  => {
         t.projects.wefood.desc1,
       ],
       video: "/img/projects/WeFoodGif.GIF",
-      link: null,
+      link: null,  // or link to the Project if deployed
       github: null, 
       stacks: ["react", "next", "api", "node"],
     },
