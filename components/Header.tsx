@@ -11,23 +11,23 @@ const Header = () => {
 
   return (
     <header className="fixed flex-auto bg-slate-800 text-zinc-100 p-4 w-full top-0 z-50 border-b border-orange-400">
-      <nav className="container mx-auto flex justify-between items-center h-7 font-body font-medium text-lg max-[1024px]:justify-evenly ">
-        <LanguageSwitcher/>
+      <nav className="container mx-auto flex justify-center items-center h-7 font-body font-medium text-lg max-[1024px]:justify-evenly">
         <div className="hidden lg:flex space-x-16 items-center cursor-pointer ">
+          <LanguageSwitcher />
           <Link to="home" smooth={true} duration={500}>
-          {t.header.home}
+            {t.header.home}
           </Link>
           <Link to="profil" smooth={true} duration={500}>
-          {t.header.profil}
+            {t.header.profil}
           </Link>
           <Link to="competences" smooth={true} duration={500}>
-          {t.header.skills}
+            {t.header.skills}
           </Link>
           <Link to="portfolio" smooth={true} duration={500}>
-          {t.header.portfolio}
+            {t.header.portfolio}
           </Link>
           <Link to="contact" smooth={true} duration={500}>
-          {t.header.contact}
+            {t.header.contact}
           </Link>
           <CVDownloadBtn />
         </div>
