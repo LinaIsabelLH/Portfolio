@@ -43,18 +43,19 @@ export const locales = {
     },
     project: {
       titleSection: "Mes projets",
+      stackList : "Tech Stack",
     },
     projects: {
       wefood: {
         title: "WeFood App",
         desc1:
-          "WeFood est une application mobile en React Native et Node.js, connectant les utilisateurs à des restaurants selon leurs préférences. L'application intègre MongoDB pour la gestion des données, la géolocalisation, des filtres dynamiques, l'intégration d'APIs externes (Google Maps), ainsi qu’un système de suivi (follow) et une certification “Recommandé par les locaux” pour valoriser les avis d’utilisateurs de la même nationalité.",
+          "WeFood App est une application mobile innovante développée en React Native et Node.js, permettant aux utilisateurs de découvrir des restaurants selon leurs goûts. Elle combine MongoDB pour la gestion des données, géolocalisation, filtres dynamiques et intégration d’APIs externes (Google Maps). Parmi ses fonctionnalités clés : un système de suivi (follow) entre utilisateurs et un badge “Recommandé par les locaux”, attribué aux restaurants ayant reçu plusieurs avis positifs de clients de la même nationalité, garantissant ainsi des recommandations fiables et pertinentes.",
         github: "Non disponible",
       },
       portfolio: {
         title: "Mon Portfolio",
         desc1:
-          "Portfolio moderne et performant, conçu pour valoriser mes projets et compétences en développement web. Développé avec Next.js (SSR/SSG) pour des performances optimales et un bon référencement, il intègre TypeScript pour un code fiable et maintenable. L'expérience utilisateur est enrichie par des animations fluides avec AOS et Framer Motion, tandis que Tailwind CSS assure un design épuré et responsive",
+          "Portfolio moderne et performant, conçu pour valoriser mes projets et compétences en développement web. Développé avec Next.js (SSR/SSG) pour des performances optimales et un bon référencement, il intègre TypeScript pour un code fiable et maintenable. L'expérience utilisateur est enrichie par des animations fluides avec AOS et Framer Motion, tandis que Tailwind CSS assure un design épuré et responsive.",
         github: "https://github.com/LinaIsabelLH/Portfolio.git",
       },
     },
@@ -64,7 +65,6 @@ export const locales = {
       viewGithub: "Voir le Github",
       viewVideo: "Vidéo Démo",
       typeProject : "Projet Local",  // or "Visit site" if deployed
-      stackList : "Tech Stack",
       back: "Retourner aux projets"
     },
     contact: {

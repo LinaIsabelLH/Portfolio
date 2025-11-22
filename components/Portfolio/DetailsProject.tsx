@@ -27,7 +27,7 @@ const DetailsProject = (props: Props) => {
     >
       <div className="relative w-full max-w-[700px] max-h-[90vh] overflow-y-auto bg-[radial-gradient(circle,#fb923c,#1e293b)] border border-orange-400 rounded-[20px] p-0 text-slate-100">
         <div className="flex flex-col items-center justify-center gap-[30px] p-[30px_25px] max-[500px]:p-[20px_10px]">
-          <h3 className="text-2xl font-bold">{selectedProject.title}</h3>
+          <h3 className="text-2xl font-bold mt-3">{selectedProject.title}</h3>
           <Image
             src={imageUrl}
             alt={selectedProject.title}
@@ -38,17 +38,17 @@ const DetailsProject = (props: Props) => {
             className="w-full max-h-[370px] h-auto my-5 object-cover object-top border border-slate-800"
           />
           {/* projectlinksContainer */}
-          <div className="flex items-center gap-2.5 flex-wrap justify-center w-full text-center">
+          <div className="items-center flex flex-wrap justify-center w-full text-center relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px]">
             {selectedProject.descriptions.map((desc) => (
-              <p key={desc} className="mb-2.5 text-lg">
+              <p key={desc} className="text-lg">
                 {desc}
               </p>
             ))}
-            <div className="absolute bottom-0 left-[10%] w-[80%] border-b-2 border-gray-600 rounded-sm"></div>
+            
           </div>
           {/* Stacks utilisés */}
-          <h4 className="font-semibold text-center text-lg pt-3 px-2.5">
-            {t.buttons.stackList}
+          <h4 className="font-semibold text-center text-lg">
+            {t.project.stackList}
           </h4>
           <div className="relative pb-[30px] before:content-[''] before:absolute before:left-[10%] before:bottom-0 before:w-[80%] before:border-b-[3px] before:border-gray-600 before:rounded-[1.5px] flex flex-wrap gap-2.5 justify-center w-full">
             {stacks.map((stack, index) => (
