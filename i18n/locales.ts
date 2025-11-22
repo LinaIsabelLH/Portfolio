@@ -38,7 +38,8 @@ export const locales = {
     },
     skills: {
       title: "Mes Compétences",
-
+      subtitle: "Les outils que j'utilise",
+      subtitle2: "Les technos que j'ai travaillé"
     },
     project: {
       titleSection: "Mes projets",
@@ -115,6 +116,8 @@ export const locales = {
     },
     skills: {
       title: "Skills",
+      subtitle: "My developer toolkit",
+      subtitle2: "Tech I have worked with"
 
     },
     project: {
