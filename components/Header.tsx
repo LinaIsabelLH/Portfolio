@@ -46,12 +46,13 @@ const Header = () => {
         </button>
 
         {menuOpen && (
-          <div className="lg:hidden absolute top-16 right-0 bg-slate-800 w-64 p-4 flex flex-col items-center border border-orange-400 shadow-lg">
+          <div className="lg:hidden absolute top-[61px] right-0 bg-slate-800 w-full p-7 gap-4 flex flex-col items-start border border-b-orange-400 border-x-0 border-t-0 shadow-lg">
             <Link
               to="home"
               smooth={true}
               duration={500}
               onClick={() => setMenuOpen(false)}
+              className=""
             >
               {t.header.home}
             </Link>
@@ -88,6 +89,7 @@ const Header = () => {
               {t.header.contact}
             </Link>
             <CVDownloadBtn />
+            <LanguageSwitcher />
           </div>
         )}
       </nav>

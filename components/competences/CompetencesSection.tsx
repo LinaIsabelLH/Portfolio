@@ -22,7 +22,7 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-4 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[2560px]:mx-8 max-[709px]:mx-2 max-[709px]:mb-6 max-[540px]:pt-[5px] max-[425px]:rounded-2xl">
+          <div className="relative flex flex-col mb-10 pt-4 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[2560px]:mx-8 max-[709px]:mx-2 max-[709px]:mb-6 max-[540px]:pt-[5px] max-[425px]:rounded-2xl max-[426px]:mr-0">
             <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl max-[540px]:text-base max-[540px]:px-[4px]">
               FrontEnd
             </h3>
@@ -38,7 +38,7 @@ const CompetencesSection = () => {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <div className="relative flex flex-col mb-10 pt-4 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[2560px]:mx-6 max-[709px]:mb-6  max-[540px]:pt-[5px] max-[425px]:rounded-2xl">
+          <div className="relative flex flex-col mb-10 pt-4 bg-gray-800 shadow-orange-300/50 shadow-lg border border-orange-400 rounded-4xl max-[2560px]:mx-6 max-[709px]:mb-6  max-[540px]:pt-[5px] max-[425px]:rounded-2xl max-[426px]:mr-1 max-[426px]:ml-3">
             <h3 className="text-orange-400 font-bold text-2xl text-center px-[10px] py-0 max-[800px]:text-xl max-[540px]:text-base">
               BackEnd
             </h3>
