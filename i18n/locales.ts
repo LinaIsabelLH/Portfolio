@@ -6,6 +6,7 @@ export const locales = {
       skills: "Compétences",
       portfolio: "Portfolio",
       contact: "Contact",
+      cv: "/img/CV Lina Isabel Londono -Développeur FullStack.pdf",
     },
     home: {
       greet: "Bonjour et Bienvenu(e)!",
@@ -39,11 +40,11 @@ export const locales = {
     skills: {
       title: "Mes Compétences",
       subtitle: "Les outils que j'utilise",
-      subtitle2: "Les technos que j'ai travaillé"
+      subtitle2: "Les technos que j'ai travaillé",
     },
     project: {
       titleSection: "Mes projets",
-      stackList : "Tech Stack",
+      stackList: "Tech Stack",
     },
     projects: {
       wefood: {
@@ -64,8 +65,8 @@ export const locales = {
       githubPrivate: "Github privé",
       viewGithub: "Voir le Github",
       viewVideo: "Vidéo Démo",
-      typeProject : "Projet Local",  // or "Visit site" if deployed
-      back: "Retourner aux projets"
+      typeProject: "Projet Local", // or "Visit site" if deployed
+      back: "Retourner aux projets",
     },
     contact: {
       title: "Contact",
@@ -84,6 +85,7 @@ export const locales = {
       skills: "Skills",
       portfolio: "Portfolio",
       contact: "Contact",
+      cv: "/img/CV Lina Isabel Londono -FullStack Developer ENG.pdf",
     },
     home: {
       greet: "Hello and Welcome!",
@@ -117,8 +119,7 @@ export const locales = {
     skills: {
       title: "Skills",
       subtitle: "My developer toolkit",
-      subtitle2: "Tech I have worked with"
-
+      subtitle2: "Tech I have worked with",
     },
     project: {
       titleSection: "My projects",
@@ -136,14 +137,14 @@ export const locales = {
           "A sleek, high-performance portfolio designed to showcase my web development projects and expertise. Built with Next.js (SSR/SSG) for speed and SEO, and TypeScript for robust, maintainable code. Enhanced with smooth animations via AOS and Framer Motion, and styled with Tailwind CSS for a modern, responsive design.",
         github: "https://github.com/LinaIsabelLH/Portfolio.git",
       },
-    },    
+    },
     buttons: {
       details: "Details",
       githubPrivate: "Private Github",
       viewGithub: "View Github",
       viewVideo: "Demo video",
-      typeProject : "Local Project",
-      stackList : "Tech Stack",
+      typeProject: "Local Project",
+      stackList: "Tech Stack",
       back: "Back to the projects",
     },
 
