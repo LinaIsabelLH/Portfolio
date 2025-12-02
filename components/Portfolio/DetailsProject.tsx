@@ -73,7 +73,7 @@ const DetailsProject = (props: Props) => {
           <div className="flex flex-wrap gap-2 justify-center items-center">
             {selectedProject.github &&
               (selectedProject.github === "Non disponible" ? (
-                <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] py-2 flex items-center justify-center px-4 text-gray-500 cursor-not-allowed font-bold">
+                <h4 className="disabledButton bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] py-2 flex items-center justify-center px-4 text-neutral-500 cursor-not-allowed font-bold">
                   {t.buttons.githubPrivate}
                 </h4>
               ) : (

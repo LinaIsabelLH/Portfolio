@@ -17,7 +17,7 @@ const ProjectLink = (props: Props) => {
       <a
         href={projectLink}
         target="blank"
-        className="no-underline bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center px-4 cursor-pointer hover:text-orange-400"
+        className="no-underline py-0 bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center px-4 cursor-pointer hover:text-orange-400"
       >
         <h4 className="text-lg font-bold">{t.buttons.typeProject}</h4>
       </a>
@@ -25,8 +25,8 @@ const ProjectLink = (props: Props) => {
   }
 
   return (
-    <h4 className="disabledButton font-bold bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 py-2 text-gray-500 cursor-not-allowed">
-      {t.buttons.typeProject}{" "}
+    <h4 className="disabledButton py-0 font-bold bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-neutral-500 cursor-not-allowed">
+      {t.buttons.typeProject}
     </h4>
   );
 };

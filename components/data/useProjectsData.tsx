@@ -14,7 +14,7 @@ export const useProjectsData =(): ProjectType[]  => {
       ],
       video: "/img/projects/WeFoodGif.GIF",
       link: null,  // or link to the Project if deployed
-      github: null, 
+      github: "Non disponible", 
       stacks: ["react", "next", "api", "node"],
     },
     {
