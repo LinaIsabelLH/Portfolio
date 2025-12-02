@@ -7,7 +7,7 @@ export const locales = {
       portfolio: "Portfolio",
       contact: "Contact",
       cv: "/img/CV Lina Isabel Londono -Développeur FullStack.pdf",
-      downloadName: "CV Lina Isabel Londono -Développeur FullStack"
+      downloadName: "CV Lina Isabel Londono -Développeur FullStack",
     },
     home: {
       greet: "Bonjour et Bienvenu(e)!",
@@ -87,7 +87,7 @@ export const locales = {
       portfolio: "Portfolio",
       contact: "Contact",
       cv: "/img/CV Lina Isabel Londono -FullsStack Developer ENG.pdf",
-      downloadName: "CV Lina Isabel Londono -FullsStack Developer"
+      downloadName: "CV Lina Isabel Londono -FullsStack Developer",
     },
     home: {
       greet: "Hello and Welcome!",
@@ -125,6 +125,7 @@ export const locales = {
     },
     project: {
       titleSection: "My projects",
+      stackList: "Tech Stack",
     },
     projects: {
       wefood: {
