@@ -97,7 +97,7 @@ const DetailsProject = (props: Props) => {
                 </a>
               ))}
             {/* Lien vers le projet */}
-            <ProjectLink selectedProject={selectedProject} />
+            <ProjectLink selectedProject={selectedProject} sizeDisableButton="py-2"/>
             {/* Bouton de retour */}
             <button
               type="button"

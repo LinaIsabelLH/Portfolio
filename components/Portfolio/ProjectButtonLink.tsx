@@ -5,11 +5,11 @@ import { useLocale } from "@/i18n/useLocale";
 
 type Props = {
   selectedProject: ProjectType;
+  sizeDisableButton: string;
 };
 
-const ProjectLink = (props: Props) => {
+const ProjectLink = ({selectedProject, sizeDisableButton}: Props) => {
   const { t } = useLocale();
-  const { selectedProject } = props;
   const { link: projectLink } = selectedProject;
 
   if (projectLink != null) {
@@ -25,7 +25,8 @@ const ProjectLink = (props: Props) => {
   }
 
   return (
-    <h4 className="disabledButton py-0 font-bold bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-neutral-500 cursor-not-allowed">
+    <h4 className={`font-bold bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 text-neutral-500 cursor-not-allowed ${
+      sizeDisableButton  || ''}`}>
       {t.buttons.typeProject}
     </h4>
   );

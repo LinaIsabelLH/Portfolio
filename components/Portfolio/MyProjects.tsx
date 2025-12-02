@@ -90,7 +90,7 @@ const MyProjects = () => {
                       </a>
                     ))}
                   <VideoDemo selectedProject={data} />
-                  <ProjectLink selectedProject={data} />
+                  <ProjectLink selectedProject={data} sizeDisableButton="py-0" />
                   <Button
                     onClick={() => openModal(data)}
                     className="bg-slate-800 rounded-lg border border-orange-400 min-h-[30px] flex items-center justify-center px-4 cursor-pointer hover:text-orange-400"
